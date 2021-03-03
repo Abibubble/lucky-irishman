@@ -1,45 +1,296 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Title
 
-Welcome USER_NAME,
+![GitHub contributors](https://img.shields.io/github/contributors/shamrocked/REPO)
+![GitHub last commit](https://img.shields.io/github/last-commit/shamrocked/REPO)
+![GitHub language count](https://img.shields.io/github/languages/count/shamrocked/REPO)
+![GitHub top language](https://img.shields.io/github/languages/top/shamrocked/REPO)
+![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
+![GitHub forks](https://img.shields.io/github/forks/shamrocked/REPO?style=social)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+[Here is a link to the final project](https://shamrocked.github.io/REPO)
 
-## Gitpod Reminders
+BASIC DESCRIPTION OF PROJECT
+It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
+WHY DID WE CHOOSE THIS PROJECT
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Final project image home page](assets/images/finalpage.png)
 
-`python3 -m http.server`
+## Contents
 
-A blue button should appear to click: *Make Public*,
+* [User Experience (UX)](#user-experience-(ux))
+    * [Initial Discussion](#initial-discussion)
+    * [User Stories](#user-stories)
 
-Another blue button should appear to click: *Open Browser*.
+* [Design](#design)
+    * [Color Scheme](#color-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [Wireframes](#wireframes)
+    * [Features](#features)
+    * [Audio](#audio)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* [Technologies Used](#technologies-used)
+    * [Languages Used](#languages-used)
+    * [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 
-A blue button should appear to click: *Make Public*,
+* [Deployment](#deployment)
+    * [Initial Deployment](#initial-deployment)
+    * [How to Fork it](#how-to-fork-it)
+    * [How to Clone it](#how-to-clone-it)
+    * [Making a Local Clone](#making-a-local-clone)
 
-Another blue button should appear to click: *Open Browser*.
+* [Testing](#testing)
+    * [W3C Validator](#w3c-validator)
+    * [Testing User Stories](#testing-user-stories)
+    * [Full Testing](#full-testing)
+    * [Further Testing](#further-testing)
+    * [Solved Bugs](#solved-bugs)
+    * [Known Bugs](#known-bugs)
+    * [Lighthouse](#lighthouse)
+        * [Performance](#performance)
+        * [Accessibility](#accessibility)
+        * [Best Practices](#best-practices)
+        * [SEO](#seo)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [Credits](#credits)
+    * [Code](#code)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgements](#acknowledgements)
 
-## Updates Since The Instructional Video
+---
+## User Experience (UX)
+### Initial Discussion
+WHAT WE WANTED FROM THIS PROJECT
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User Stories
+#### Client Goals
+* WHAT THE CLIENT WANTS, NOT THE USER
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### First Time Visitor Goals
+* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Returning Visitor Goals
+* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Frequent Visitor Goals
+* WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+---
+## Design
+### Color Scheme
+* WHAT COLORS USED AND WHY
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Typography
+* WHAT FONT AND WHY
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Imagery
+* WHAT IMAGES ARE USED AND WHY
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Wireframes
+[Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
 
---------
+### Features
+* WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
 
-Happy coding!
+### Audio
+* WHAT AUDIO IS USED (IF ANY) AND WHY.
+---
+
+## Technologies Used
+### Languages Used
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3#:~:text=CSS3%20is%20the%20latest%20evolution,flexible%20box%20or%20grid%20layouts.)
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+### Frameworks Libraries and Programs Used
+#### Font Awesome:
+[Font Awesome](https://fontawesome.com/) was used on all pages to add the instructions, home, settings and copyright icons.
+#### Git:
+Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
+#### GitHub:
+GitHub is used to store the code for this project after being pushed from Git.
+#### Balsamiq:
+Balsamiq was used to create the wireframes during the design process.
+#### Responsinator:
+[Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
+#### Google DevTools:
+Google DevTools was used to help me find what code correlated to what feature.
+#### Am I Responsive Design:
+[Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
+#### Shields.io:
+[Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
+
+BOOTSTRAP, JASMINE TESTING, JQUERY, ETC. USED?
+
+## Deployment
+### Initial Deployment
+This site was deployed to GitHub Pages by following these steps:
+1. Login or Sign Up to [GitHub](www.github.com).
+2. Create a new repository named "REPO".
+3. Once created, click on "Settings" on the navigation bar under the repository title.
+4. Scroll down to "GitHub Pages".
+5. Under "Source", choose which branch to deploy. We chose "master", but this is sometimes shown as "main".
+6. Choose which folder to deploy from, usually "/root".
+7. Click "Save", then wait for it to be deployed. It can take some time for the page to be fully deployed.
+8. Your URL will be displayed above "Source".
+
+### How to Fork it
+1. Login or Sign Up to [GitHub](www.github.com).
+2. On GitHub, go to [shamrocked/REPO](https://github.com/shamrocked/REPO).
+3. In the top right, click "Fork".
+
+### How to Clone it
+1. Login or Sign Up to [GitHub](www.github.com).
+2. Fork the repository shamrocked/REPO using the steps above in [How to Fork it](#how-to-fork-it).
+3. Above the file list, click "Code".
+4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
+5. Open Git Bash.
+6. Change the directory to where you want your clone to go.
+7. Type gitclone and then paste the URL you copied in step 4.
+8. Press Enter to create your clone.
+
+### Making a Local Clone
+1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/REPO) for this resume.
+2. Under the repository name, above the list of files, click "Code".
+3. Here you can either Clone or Download the repository.
+4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
+5. Open Git Bash.
+6. Change the current working directory to the new location, where you want the cloned directory to be.
+6. Type git clone, and then paste the URL that was copied in Step 4.
+7. Press Enter, and your local clone will be created.
+
+For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
+
+---
+## Testing
+### W3C Validator
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
+
+1. W3C Markup Validator
+    * [HTML Results](LINK)
+
+2. W3C CSS Validator
+    * [CSS Results](LINK)
+
+3. JSHint
+    * [JSHint](https://jshint.com/)
+
+
+### Testing User Stories
+#### Client Goals
+##### GOAL
+* HOW THE SITE COMPLETEES EACH GOAL
+
+#### First Time Visitor Goals
+##### GOAL
+* HOW THE SITE COMPLETEES EACH GOAL
+
+#### Returning Visitor Goals
+##### GOAL
+* HOW THE SITE COMPLETEES EACH GOAL
+
+#### Frequent Visitor Goals
+##### GOAL
+* HOW THE SITE COMPLETEES EACH GOAL
+
+### Full Testing
+[Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
+
+#### Desktop / Laptop
+1. Google Chrome
+    * All tested and working correctly.
+
+2. Microsoft Edge
+    * 
+
+3. Mozilla Firefox
+    * 
+
+4. Internet Explorer
+    * 
+
+5. Safari
+    * 
+
+#### Tablet
+1. Safari
+    * 
+
+#### Mobile
+1. Google Chrome
+    * 
+
+2. Safari
+    * 
+
+3. Samsung Internet
+    * 
+
+### Further Testing
+The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
+The website was viewed on a variety of devices, including:
+* Custom built desktop PC, running Windows 10
+* Acer Aspire V Nitro Laptop, running Windows 10
+* Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
+* MacBookAir7,2 (13-inch, 2017)
+* iPad 6,11 5th generation, running iOS 10.3
+* Amazon Fire tablet 7
+* iPhone 7
+* iPhone X
+* iPhone 12
+* OPPO Find X2 Lite
+* Samsung Galaxy A70
+* Samsung Galaxy S9
+* Samsung Galaxy S10+
+* Samsung A20
+* xBox One
+
+A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
+Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+
+### Solved Bugs
+1. WHAT THE BUG IS
+    * WHAT STEPS WE TOOK TO FIX IT
+
+### Known Bugs
+* ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
+
+### Lighthouse
+We tested our website using DevTools Lighthouse feature, and got these results:
+
+#### Desktop
+![Lighthouse desktop first try](assets/images/docs/lighthouse.png)
+
+#### Mobile
+![Lighthouse mobile first try](assets/images/docs/lighthousemobile.png)
+
+#### Performance:
+* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+
+#### Accessibility:
+* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+
+#### Best Practices:
+* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+
+#### SEO:
+* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+
+---
+## Credits
+### Code
+* [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
+* ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
+
+### Audio
+* WHO OWNS THE AUDIO AND WHO EDITED THE AUDIO
+
+### Content
+* WHO OWNS THE CONTENT OF THE SITE
+
+### Media
+* WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
+
+### Acknowledgements
+* WHO WE WANT TO THANK

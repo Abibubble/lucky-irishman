@@ -25,7 +25,7 @@ WHY DID WE CHOOSE THIS PROJECT
     * [Color Scheme](#color-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-    * [Wireframes](#wireframes)
+    * [Wireframes](assets/docs/hackathon.pdf)
     * [Features](#features)
     * [Audio](#audio)
 

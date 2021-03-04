@@ -79,7 +79,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 ---
 ## Design
 ### Color Scheme
-* WHAT COLORS USED AND WHY
+* The colors used were shades of green, to link with the St. Patrick's Day theme.
 
 ### Typography
 * WHAT FONT AND WHY
@@ -91,7 +91,10 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
 
 ### Features
-* WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
+* A flipping card that rotates to show the next drinking challenge.
+* A link to connect you to emergency help.
+* A reminder to drink responsibly on every page.
+* An age requirement.
 ---
 
 ## Technologies Used

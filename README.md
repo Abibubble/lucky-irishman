@@ -105,17 +105,17 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### Frameworks Libraries and Programs Used
 #### Font Awesome:
-[Font Awesome](https://fontawesome.com/) was used on all pages to add the instructions, home, settings and copyright icons.
+[Font Awesome](https://fontawesome.com/) was used on all pages to add the beer and copyright icons.
 #### Git:
 Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
 #### GitHub:
-GitHub is used to store the code for this project after being pushed from Git.
+[GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
-Balsamiq was used to create the wireframes during the design process.
+[Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 #### Bootstrap
-Bootstrap was used 
+[Bootstrap](https://getbootstrap.com/) was used.
 #### jQuery
-jQuery was used
+[jQuery](https://jquery.com/) was used.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
@@ -129,7 +129,7 @@ Google DevTools was used to help me find what code correlated to what feature.
 ### Initial Deployment
 This site was deployed to GitHub Pages by following these steps:
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Create a new repository named "REPO".
+2. Create a new repository named "lucky-irishman".
 3. Once created, click on "Settings" on the navigation bar under the repository title.
 4. Scroll down to "GitHub Pages".
 5. Under "Source", choose which branch to deploy. We chose "master", but this is sometimes shown as "main".
@@ -139,12 +139,12 @@ This site was deployed to GitHub Pages by following these steps:
 
 ### How to Fork it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. On GitHub, go to [shamrocked/REPO](https://github.com/shamrocked/REPO).
+2. On GitHub, go to [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman).
 3. In the top right, click "Fork".
 
 ### How to Clone it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Fork the repository shamrocked/REPO using the steps above in [How to Fork it](#how-to-fork-it).
+2. Fork the repository shamrocked/lucky-irishman using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -153,7 +153,7 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/REPO) for this resume.
+1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/lucky-irishman) for this resume.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
@@ -182,22 +182,22 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 ### Testing User Stories
 #### Client Goals
 ##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### First Time Visitor Goals
 ##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### Returning Visitor Goals
 ##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### Frequent Visitor Goals
 ##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 ### Full Testing
-[Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
+[Click here](testing.md) to view the full testing steps that were completed on every device and browser.
 
 #### Desktop / Laptop
 1. Google Chrome
@@ -262,10 +262,10 @@ Friends, family members, and other developers were asked to review the site and 
 We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/images/lighthouse.png)
+![Lighthouse desktop first try](assets/docs/lighthouse.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/images/lighthousemobile.png)
+![Lighthouse mobile first try](assets/docs/lighthousemobile.png)
 
 #### Performance:
 * EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
@@ -285,14 +285,15 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
 
-### Audio
-* WHO OWNS THE AUDIO AND WHO EDITED THE AUDIO
-
 ### Content
-* WHO OWNS THE CONTENT OF THE SITE
+* All code was written and edited by team Shamrocked from [Code Institute](https://codeinstitute.net/):
+    * [Abi Harrison](https://github.com/Abibubble)
+    * [Kiran Kumari Satyarthy](https://github.com/Kiran6248)
+    * [Mihaela Sandrea](https://github.com/mihaelasandrea)
+    * [Toby](https://github.com/ogunmakindetobi)
 
 ### Media
-* WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
+* All images were found on [Pexels](https://www.pexels.com/), all copyright free.
 
 ### Acknowledgements
-* WHO WE WANT TO THANK
+* Special thanks to Miklos, our mentor from Code Institute.

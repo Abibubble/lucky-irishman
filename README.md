@@ -113,9 +113,9 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 #### Balsamiq:
 [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 #### Bootstrap
-[Bootstrap](https://getbootstrap.com/) was used.
+[Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
 #### jQuery
-[jQuery](https://jquery.com/) was used.
+[jQuery](https://jquery.com/) was used to help create the JavaScript functions.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:

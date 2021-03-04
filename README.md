@@ -88,7 +88,7 @@ WHAT WE WANTED FROM THIS PROJECT
 * WHAT IMAGES ARE USED AND WHY
 
 ### Wireframes
-[Here are the wireframes for desktop, mobile and tablet for this project](hackathon.pdf).
+[Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
 
 ### Features
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.

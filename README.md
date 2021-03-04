@@ -1,19 +1,19 @@
-# Title
+# Lucky Irishman
 
-![GitHub contributors](https://img.shields.io/github/contributors/shamrocked/REPO)
-![GitHub last commit](https://img.shields.io/github/last-commit/shamrocked/REPO)
-![GitHub language count](https://img.shields.io/github/languages/count/shamrocked/REPO)
-![GitHub top language](https://img.shields.io/github/languages/top/shamrocked/REPO)
+![GitHub contributors](https://img.shields.io/github/contributors/shamrocked/lucky-irishman)
+![GitHub last commit](https://img.shields.io/github/last-commit/shamrocked/lucky-irishman)
+![GitHub language count](https://img.shields.io/github/languages/count/shamrocked/lucky-irishman)
+![GitHub top language](https://img.shields.io/github/languages/top/shamrocked/lucky-irishman)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
-![GitHub forks](https://img.shields.io/github/forks/shamrocked/REPO?style=social)
+![GitHub forks](https://img.shields.io/github/forks/shamrocked/lucky-irishman?style=social)
 
-[Here is a link to the final project](https://shamrocked.github.io/REPO)
+[Here is a link to the final project](https://shamrocked.github.io/lucky-irishman)
 
-BASIC DESCRIPTION OF PROJECT
+This is a drinking game site designed for people to be able to celebrate St. Patrick's Day together whilst apart.
 It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
-WHY DID WE CHOOSE THIS PROJECT
+This was built as part of Code Institute's March 2021 Hackathon, with the theme of 'Hacking St. Patrick's Day'.
 
-![Final project image home page](assets/images/finalpage.png)
+![Final project image home page](assets/docs/finalpage.png)
 
 ## Contents
 
@@ -25,9 +25,8 @@ WHY DID WE CHOOSE THIS PROJECT
     * [Color Scheme](#color-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-    * [Wireframes](assets/docs/hackathon.pdf)
+    * [Wireframes](#wireframes)
     * [Features](#features)
-    * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -61,7 +60,8 @@ WHY DID WE CHOOSE THIS PROJECT
 ---
 ## User Experience (UX)
 ### Initial Discussion
-WHAT WE WANTED FROM THIS PROJECT
+We wanted this project to be an easy way for people to celebrate St. Patrick's Day together, whilst kept apart due to Coronavirus. It is designed to be playable over video 
+conferencing, so people can still have drinks together and celebrate St. Patrick's Day whilst staying safe.
 
 ### User Stories
 #### Client Goals
@@ -92,9 +92,6 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### Features
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
-
-### Audio
-* WHAT AUDIO IS USED (IF ANY) AND WHY.
 ---
 
 ## Technologies Used
@@ -112,6 +109,10 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 GitHub is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
 Balsamiq was used to create the wireframes during the design process.
+#### Bootstrap
+Bootstrap was used 
+#### jQuery
+jQuery was used
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
@@ -120,8 +121,6 @@ Google DevTools was used to help me find what code correlated to what feature.
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
-
-BOOTSTRAP, JASMINE TESTING, JQUERY, ETC. USED?
 
 ## Deployment
 ### Initial Deployment

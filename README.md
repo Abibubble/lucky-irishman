@@ -88,7 +88,7 @@ WHAT WE WANTED FROM THIS PROJECT
 * WHAT IMAGES ARE USED AND WHY
 
 ### Wireframes
-[Here are the wireframes for desktop, mobile and tablet for this project](wireframes.pdf).
+[Here are the wireframes for desktop, mobile and tablet for this project](hackathon.pdf).
 
 ### Features
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
@@ -260,10 +260,10 @@ Friends, family members, and other developers were asked to review the site and 
 We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/images/docs/lighthouse.png)
+![Lighthouse desktop first try](assets/images/lighthouse.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/images/docs/lighthousemobile.png)
+![Lighthouse mobile first try](assets/images/lighthousemobile.png)
 
 #### Performance:
 * EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY

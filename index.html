@@ -3,51 +3,71 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
     <title>Shamrocked page</title>
     <meta name="description" content="Shamrocked page">
     <meta name="keywords" content="shamrocked, code, institute, hackathon, st patrick's day, paddy, shamrock">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 
-<body>
-    <div class="container">
-        <section>
-            <div class="row card pt-5 text-center">
-                <div class="col-12 title">
-                    <i class="fas fa-beer px-2 py-3 fa-lg"></i>
-                    <h1 class="px-2">Lucky Irishman</h1>
-                </div>
-                <div class="col-12 py-4">
-                    <button class="btn btn-lg" type="submit">Let's start drinking !</button>
-                </div>
+<body class="background-image">
+    <div>
+        <section id="js-intro-page" class="pages">
+            <div class="container-fluid">
+                <section>
+                    <div class="row card pt-5 text-center">
+                        <div class="col-12 title">
+                            <i class="fas fa-beer d-none d-sm-block px-2 py-3 fa-lg"></i>
+                            <h1 class="px-2">Lucky Irishman</h1>
+                        </div>
+                        <div class="col-12 py-2">
+                            <button class="btn btn-lg" type="button" id="agree" onclick="navigation(id)">Let's start drinking !</button>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
+        <section id="js-agree-page" class="hide pages">
+            <!-- Agreement page + rules -->
+        </section>
+        <section id="js-card-page" class="hide pages">
+            <!-- Cards page -->
+        </section>
+        <footer class="container-fluid fixed-bottom">
+            <div class="row text-center">
+                <div class="col-md-3 d-none d-sm-block">
+                    <ul>
+                        <li><a target="_blank" rel="noopener" href="https://github.com/Abibubble">Abi Harrison</a></li>
+                        <li><a target="_blank" rel="noopener" href="https://github.com/Kiran6248">Kiran Satyarthy</a></li>
+                        <li><a target="_blank" rel="noopener" href="https://github.com/mihaelasandrea">Mihaela Sandrea</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-none d-sm-block">
+                    <ul>
+                        <li><a target="_blank" rel="noopener" href="https://github.com/ogunmakindetobi">Toby Mankinde</a></li>
+                        <li><a target="_blank" rel="noopener" href="https://github.com/katjacodes">Katja Schatte</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h2>Drink responsibly</h2>
+                    <a target="_blank" rel="noopener" class="btn"
+                        href="https://www.drinkaware.co.uk"><i
+                            class="fas fa-hand-holding-medical"></i>Ask for Help</a>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p class="copyright">Copyright &copy; Shamrocked <span id="copyright"></span></p>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="assets/js/script.js"></script>
     </div>
-    <footer class="container-fluid fixed-bottom">
-        <div class="row text-center">
-            <div class="col-12 col-md-4">
-                <ul>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/Abibubble">Abi Harrison</a></li>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/Kiran6248">Kiran Satyarthy</a></li>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/mihaelasandrea">Mihaela Sandrea</a></li>
-                    <li><a target="_blank" rel="noopener" href="https://github.com/ogunmakindetobi">Toby</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-4">
-                <p class="copyright">Copyright &copy; Lucky Irishman <span id="copyright"></span></p>
-            </div>
-            <div class="col-12 col-md-4">
-                <h2>Drink responsibly</h2>
-                <a target="_blank" rel="noopener" href="https://www.gov.ie/en/service/89da6-how-to-contact-emergency-services-in-ireland/#:~:text=Call%20the%20emergency%20services%20by,any%20phone%2C%20free%20of%20charge."><i class="fas fa-hand-holding-medical"></i>Help</a>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

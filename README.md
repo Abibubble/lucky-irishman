@@ -339,9 +339,12 @@ We tested our website using DevTools Lighthouse feature, and got these results:
     * [Mihaela Sandrea](https://github.com/mihaelasandrea)
     * [Toby Mankinde](https://github.com/ogunmakindetobi)
     * [Katja Schatte](https://github.com/katjacodes)
+    * [Reza Nazarian](https://github.com/RNazarian1)
 
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.
+* All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
 
 ### Acknowledgements
 * Special thanks to Miklos, our mentor from Code Institute.
+* Thanks to Conor Nye for editing some images.

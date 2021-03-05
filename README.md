@@ -65,16 +65,20 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### User Stories
 #### Client Goals
-* WHAT THE CLIENT WANTS, NOT THE USER
+* For a user to be able to play a drinking game with friends or family.
+* For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
 
 #### First Time Visitor Goals
-* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
+* To be able to play a drinking game with a friend via video conferencing.
+* Easy to navigate around the site.
+* Clear and simple to understand instructions.
 
 #### Returning Visitor Goals
-* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
+* To be able to replay the game, and not have the same game experience.
+* 
 
 #### Frequent Visitor Goals
-* WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
+* To be able to replay the game, and not have the same game experience.
 
 ---
 ## Design
@@ -252,8 +256,9 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. WHAT THE BUG IS
-    * WHAT STEPS WE TOOK TO FIX IT
+1. Introduction page responsive design in y-axis wasn't working.
+    * 
+    * We checked the Bootstrap classes we were using.
 
 ### Known Bugs
 * ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
@@ -290,7 +295,8 @@ We tested our website using DevTools Lighthouse feature, and got these results:
     * [Abi Harrison](https://github.com/Abibubble)
     * [Kiran Kumari Satyarthy](https://github.com/Kiran6248)
     * [Mihaela Sandrea](https://github.com/mihaelasandrea)
-    * [Toby](https://github.com/ogunmakindetobi)
+    * [Toby Mankinde](https://github.com/ogunmakindetobi)
+    * [Katja Schatte](https://github.com/katjacodes)
 
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.

@@ -65,27 +65,33 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### User Stories
 #### Client Goals
-* WHAT THE CLIENT WANTS, NOT THE USER
+* For a user to be able to play a drinking game with friends or family.
+* For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
 
 #### First Time Visitor Goals
-* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
+* To be able to play a drinking game with a friend via video conferencing.
+* Easy to navigate around the site.
+* Clear and simple to understand instructions.
 
 #### Returning Visitor Goals
-* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
+* To be able to replay the game, and not have the same game experience.
+* To be able to easily access medical advice if the situation required.
 
 #### Frequent Visitor Goals
-* WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
+* To be able to replay the game, and not have the same game experience.
+* To be able to easily access medical advice if the situation required.
 
 ---
 ## Design
 ### Color Scheme
-* The colors used were shades of green, to link with the St. Patrick's Day theme.
+* The colors used were shades of green, yellow and black, to link with the St. Patrick's Day theme.
 
 ### Typography
-* WHAT FONT AND WHY
+* The font 'Architect's Daughter' was used, as it's a relaxed font, which links with the theme of drinking.
+* The font was imported from Google Fonts, so it should function at all times that Google is functioning.
 
 ### Imagery
-* WHAT IMAGES ARE USED AND WHY
+* All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
@@ -104,7 +110,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks Libraries and Programs Used
-#### Font Awesome:
+#### Font Awesome 5.7.2:
 [Font Awesome](https://fontawesome.com/) was used on all pages to add the beer and copyright icons.
 #### Git:
 Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
@@ -112,9 +118,9 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 [GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
 [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
-#### Bootstrap
+#### Bootstrap 5.0.0:
 [Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
-#### jQuery
+#### jQuery:
 [jQuery](https://jquery.com/) was used to help create the JavaScript functions.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
@@ -144,7 +150,7 @@ This site was deployed to GitHub Pages by following these steps:
 
 ### How to Clone it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Fork the repository shamrocked/lucky-irishman using the steps above in [How to Fork it](#how-to-fork-it).
+2. Fork the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -153,7 +159,7 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/lucky-irishman) for this resume.
+1. Log in to [GitHub](www.github.com) and locate the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) for this site.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
@@ -181,20 +187,38 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 ### Testing User Stories
 #### Client Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### For a user to be able to play a drinking game with friends or family.
+* This site can be played on screen sharing over video conferencing, or with friends and family in person.
+
+##### For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
+* The entire site is themed to St. Patrick's Day.
+* The game is able to be played over video conferencing, so people can still play together, whilst not being physically together.
 
 #### First Time Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to play a drinking game with a friend via video conferencing.
+* This game is easy to play over video conferencing using a screen share function.
+
+##### Easy to navigate around the site.
+* All buttons and links throughout the site area clear to understand where they take you.
+* All buttons and links are easily visible as buttons or links by the use of CSS hover.
+
+##### Clear and simple to understand instructions.
+* The instructions are laid out in the center of the page after you click the first button to get the game started.
+* There is also an age restriction warning to instruct those under the legal drinking age not to play.
 
 #### Returning Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* All cards are presented in a randomised order, so the game won't be the same each time.
+
+##### To be able to easily access medical advice if the situation required.
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 #### Frequent Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* All cards are presented in a randomised order, so the game won't be the same each time.
+
+##### To be able to easily access medical advice if the situation required.
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 ### Full Testing
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser.
@@ -252,11 +276,29 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. WHAT THE BUG IS
-    * WHAT STEPS WE TOOK TO FIX IT
+1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
+    * We checked our modified styling, to ensure that none of those had affected the Bootstrap classes we are using.
+    * We checked the version of Bootstrap that we were using was the correct version for the features we wanted.
+    * We checked function of the Bootstrap classes we were using.
+    * We discovered our footer was not taking up the required width, due to it being located inside another container-fluid div.
+    * We took it out of that container, to give us more control over our footer.
+    * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
+
+2. The background image wasn't responsive below 1300px.
+    * We hadn't used no-repeat, fixed on our background, so we added that in.
+    * That unfortunately removed our background completely.
+    * We tried writing background-repeat: no-repeat on a seperate line, which stopped our background repeating.
+    * We then added background-size: cover, but that didn't fix our problem.
+
+3. Our footer was too big on mobile devices.
+    * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
+    * This removed all of the text from our site.
+    * We realised we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
+    * We then used media queries to correct the last little bits of styling.
 
 ### Known Bugs
-* ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
+* Bug #1
+* Bug #2
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:
@@ -283,14 +325,15 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 ## Credits
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
+* [Bootstrap](https://getbootstrap.com/): Library of CSS classes to help with responsive styling.
 
 ### Content
 * All code was written and edited by team Shamrocked from [Code Institute](https://codeinstitute.net/):
     * [Abi Harrison](https://github.com/Abibubble)
     * [Kiran Kumari Satyarthy](https://github.com/Kiran6248)
     * [Mihaela Sandrea](https://github.com/mihaelasandrea)
-    * [Toby](https://github.com/ogunmakindetobi)
+    * [Toby Mankinde](https://github.com/ogunmakindetobi)
+    * [Katja Schatte](https://github.com/katjacodes)
 
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.

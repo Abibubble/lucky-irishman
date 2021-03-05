@@ -296,9 +296,14 @@ Friends, family members, and other developers were asked to review the site and 
     * We realised we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
     * We then used media queries to correct the last little bits of styling.
 
+4. The navigation function wasn't working on the 'Let's get drinking' button.
+    * We checked if we needed this.id in our onclick function.
+    * We found that we only needed id, so changed that, but the function still wasn't working.
+    * We double checked our code, and realised we hadn't included the pages class to all page sections.
+    * We added that class, and fixed this bug.
+
 ### Known Bugs
-* Bug #1
-* Bug #2
+* None found
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:
@@ -334,9 +339,12 @@ We tested our website using DevTools Lighthouse feature, and got these results:
     * [Mihaela Sandrea](https://github.com/mihaelasandrea)
     * [Toby Mankinde](https://github.com/ogunmakindetobi)
     * [Katja Schatte](https://github.com/katjacodes)
+    * [Reza Nazarian](https://github.com/RNazarian1)
 
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.
+* All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
 
 ### Acknowledgements
 * Special thanks to Miklos, our mentor from Code Institute.
+* Thanks to Conor Nye for editing some images.

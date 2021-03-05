@@ -198,24 +198,26 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 * 
 
 ##### Easy to navigate around the site.
-* 
+* All buttons and links throughout the site area clear to understand where they take you.
+* All buttons and links are easily visible as buttons or links by the use of CSS hover.
 
 ##### Clear and simple to understand instructions.
-* 
+* The instructions are laid out in the center of the page after you click the first button to get the game started.
+* There is also an age restriction warning to instruct those under the legal drinking age not to play.
 
 #### Returning Visitor Goals
 ##### To be able to replay the game, and not have the same game experience.
-* 
+* All cards are presented in a randomised order, so the game won't be the same each time.
 
 ##### To be able to easily access medical advice if the situation required.
-* 
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 #### Frequent Visitor Goals
 ##### To be able to replay the game, and not have the same game experience.
-* 
+* All cards are presented in a randomised order, so the game won't be the same each time.
 
 ##### To be able to easily access medical advice if the situation required.
-* 
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 ### Full Testing
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser.
@@ -290,14 +292,12 @@ Friends, family members, and other developers were asked to review the site and 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
     * This removed all of the text from our site.
-    * We realised we needed to show the names column from medium screen size and above, so added md-block.
-    * It still didn't work, so we cleared the cache and restarted the worskspace, and it fixed itself.
+    * We realised we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
     * We then used media queries to correct the last little bits of styling.
 
 ### Known Bugs
 * Bug #1
 * Bug #2
-* Bug #3
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:

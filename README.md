@@ -269,6 +269,8 @@ Friends, family members, and other developers were asked to review the site and 
 2. The background image wasn't responsive below 1300px.
     * We hadn't used no-repeat, fixed on our background, so we added that in.
     * That unfortunately removed our background completely.
+    * We tried writing background-repeat: no-repeat on a seperate line, which stopped our background repeating.
+    * We then added background-size: cover, but that didn't fix our problem.
 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
@@ -278,7 +280,9 @@ Friends, family members, and other developers were asked to review the site and 
     * We then used media queries to correct the last little bits of styling.
 
 ### Known Bugs
-* ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
+* Bug #1
+* Bug #2
+* Bug #3
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:

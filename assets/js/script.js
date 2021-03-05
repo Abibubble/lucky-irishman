@@ -13,7 +13,7 @@ function navigation(id) {
     }
     switch (id) {
         case "home":
-            homePage.classList.remove("hide");
+            introPage.classList.remove("hide");
             break;
         case "agree":
             agreePage.classList.remove("hide");

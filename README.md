@@ -324,7 +324,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 ## Credits
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
+* [Bootstrap](https://getbootstrap.com/) was used to help with responsive styling CSS classes.
 
 ### Content
 * All code was written and edited by team Shamrocked from [Code Institute](https://codeinstitute.net/):

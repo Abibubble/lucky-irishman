@@ -75,10 +75,11 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 #### Returning Visitor Goals
 * To be able to replay the game, and not have the same game experience.
-* 
+* To be able to easily access medical advice if the situation required.
 
 #### Frequent Visitor Goals
 * To be able to replay the game, and not have the same game experience.
+* To be able to easily access medical advice if the situation required.
 
 ---
 ## Design
@@ -257,9 +258,18 @@ A large amount of testing was done to ensure that all pages were visible or hidd
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. Introduction page responsive design in y-axis wasn't working.
-    * 
-    * We checked the Bootstrap classes we were using.
+1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
+    * We checked our modified styling, to ensure that none of those had affected the Bootstrap classes we are using.
+    * We checked the version of Bootstrap that we were using was the correct version for the features we wanted.
+    * We checked function of the Bootstrap classes we were using.
+    * We discovered our footer was not taking up the required width, due to it being located inside another container-fluid div.
+    * We took it out of that container, to give us more control over our footer.
+    * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
+
+2. The background image wasn't responsive below 1300px.
+    * We hadn't used no-repeat, fixed on our background, so we added that in.
+    * That unfortunately removed our background completely.
+
 
 ### Known Bugs
 * ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES

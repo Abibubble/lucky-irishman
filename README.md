@@ -91,7 +91,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * The font was imported from Google Fonts, so it should function at all times that Google is functioning.
 
 ### Imagery
-* WHAT IMAGES ARE USED AND WHY
+* All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).

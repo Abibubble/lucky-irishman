@@ -188,14 +188,15 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 ### Testing User Stories
 #### Client Goals
 ##### For a user to be able to play a drinking game with friends or family.
-* 
+* This site can be played on screen sharing over video conferencing, or with friends and family in person.
 
 ##### For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
-* 
+* The entire site is themed to St. Patrick's Day.
+* The game is able to be played over video conferencing, so people can still play together, whilst not being physically together.
 
 #### First Time Visitor Goals
 ##### To be able to play a drinking game with a friend via video conferencing.
-* 
+* This game is easy to play over video conferencing using a screen share function.
 
 ##### Easy to navigate around the site.
 * All buttons and links throughout the site area clear to understand where they take you.

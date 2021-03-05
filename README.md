@@ -149,7 +149,7 @@ This site was deployed to GitHub Pages by following these steps:
 
 ### How to Clone it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Fork the repository shamrocked/lucky-irishman using the steps above in [How to Fork it](#how-to-fork-it).
+2. Fork the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -158,7 +158,7 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/lucky-irishman) for this resume.
+1. Log in to [GitHub](www.github.com) and locate the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) for this site.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.

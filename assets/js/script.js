@@ -3,7 +3,6 @@
 const introPage = document.getElementById("js-intro-page");
 const agreePage = document.getElementById("js-agree-page");
 const cardPage = document.getElementById("js-card-page");
-const helpPage = document.getElementById("js-help-page");
 
 // -------------------------------------------------------------------- Navigation functions
 
@@ -17,13 +16,10 @@ function navigation(id) {
             homePage.classList.remove("hide");
             break;
         case "agree":
-            homePage.classList.remove("hide");
+            agreePage.classList.remove("hide");
             break;
         case "card":
-            aboutPage.classList.remove("hide");
-            break;
-        case "help":
-            helpPage.classList.remove("hide");
+            cardPage.classList.remove("hide");
             break;
         default:
             homePage.classList.remove("hide");
@@ -32,6 +28,7 @@ function navigation(id) {
 }
 
 // -------------------------------------------------------------------- Copyright
+
 function copyrightYear() {
    var d = new Date();
    var y = d.getFullYear();

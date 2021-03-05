@@ -83,10 +83,11 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 ---
 ## Design
 ### Color Scheme
-* The colors used were shades of green, to link with the St. Patrick's Day theme.
+* The colors used were shades of green, yellow and black, to link with the St. Patrick's Day theme.
 
 ### Typography
-* WHAT FONT AND WHY
+* The font 'Architect's Daughter' was used, as it's a relaxed font, which links with the theme of drinking.
+* The font was imported from Google Fonts, so it should function at all times that Google is functioning.
 
 ### Imagery
 * WHAT IMAGES ARE USED AND WHY
@@ -116,9 +117,9 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 [GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
 [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
-#### Bootstrap
+#### Bootstrap 5.0.0:
 [Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
-#### jQuery
+#### jQuery:
 [jQuery](https://jquery.com/) was used to help create the JavaScript functions.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.

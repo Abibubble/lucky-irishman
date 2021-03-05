@@ -270,6 +270,12 @@ Friends, family members, and other developers were asked to review the site and 
     * We hadn't used no-repeat, fixed on our background, so we added that in.
     * That unfortunately removed our background completely.
 
+3. Our footer was too big on mobile devices.
+    * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
+    * This removed all of the text from our site.
+    * We realised we needed to show the names column from medium screen size and above, so added md-block.
+    * It still didn't work, so we cleared the cache and restarted the worskspace, and it fixed itself.
+    * We then used media queries to correct the last little bits of styling.
 
 ### Known Bugs
 * ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES

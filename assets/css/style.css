@@ -37,6 +37,19 @@ body {
     justify-content: center;
 }
 
+.agree-card {
+    height: auto;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.card h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .btn {
     background-color: black;
     color: #fff;
@@ -90,6 +103,7 @@ footer a:hover {
     display: none;
 }
 
+
 @media (max-width: 991.98px) {
     .card {
         width: fit-content;
@@ -105,4 +119,16 @@ footer a:hover {
         padding-top: 15px;
     }
 
+    .agree-card p {
+        font-size: 1rem;
+    }
+
+    .agree-card h3 {
+        font-size: 2rem;
+    }
+
+    .agree-card {
+        width: fit-content;
+        margin-top: 100px;
+    }
 }

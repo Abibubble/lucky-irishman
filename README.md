@@ -187,20 +187,35 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 ### Testing User Stories
 #### Client Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### For a user to be able to play a drinking game with friends or family.
+* 
+
+##### For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
+* 
 
 #### First Time Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to play a drinking game with a friend via video conferencing.
+* 
+
+##### Easy to navigate around the site.
+* 
+
+##### Clear and simple to understand instructions.
+* 
 
 #### Returning Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* 
+
+##### To be able to easily access medical advice if the situation required.
+* 
 
 #### Frequent Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* 
+
+##### To be able to easily access medical advice if the situation required.
+* 
 
 ### Full Testing
 [Click here](testing.md) to view the full testing steps that were completed on every device and browser.

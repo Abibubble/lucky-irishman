@@ -110,7 +110,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks Libraries and Programs Used
-#### Font Awesome:
+#### Font Awesome 5.7.2:
 [Font Awesome](https://fontawesome.com/) was used on all pages to add the beer and copyright icons.
 #### Git:
 Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.

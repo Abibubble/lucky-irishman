@@ -52,7 +52,6 @@ class LuckyIrishman {
         this.timeRemaining = this.totalTime;
         this.busy = true;
         setTimeout(() => {
-            this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
          }, 500);
@@ -92,16 +91,8 @@ class LuckyIrishman {
         this.hideCards();
     }
 
-    shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * (i+1));
-            this.cardsArray[randIndex].style.order = i;
-            this.cardsArray[i].style.order = randIndex;
-        }
-    }
-
-    canFlipCard(card) {
-        return !this.busy  && card !== this.cardToCheck;
+    canFlipCard() {
+        return !this.busy;
     }
 
     cardPopulate() {
@@ -110,7 +101,15 @@ class LuckyIrishman {
         cardBox.src = `assets/images/cards/card${randomNumber}.jpg`;
         cardBox.alt = "An image related to the drinking game";
     }
+
+    nextFlip() {
+        this.flipCard && this.cardPopulate;
+    }
+
 }
+
+
+
 
 let music = "off";
 const irishAudio = new Audio('assets/audio/audio.mp3');

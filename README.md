@@ -27,6 +27,7 @@ This was built as part of Code Institute's March 2021 Hackathon, with the theme 
     * [Imagery](#imagery)
     * [Wireframes](#wireframes)
     * [Features](#features)
+    * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -92,15 +93,23 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### Imagery
 * All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
+* The favicon is included to tie the site to the theme from the moment they load the page.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
 
 ### Features
 * A flipping card that rotates to show the next drinking challenge.
-* A link to connect you to emergency help.
+* A link to connect you to Drink Aware.
 * A reminder to drink responsibly on every page.
 * An age requirement.
+* Audio toggle on / off.
+* A favicon to add to the theme of the site.
+
+### Audio
+* An audio file of Irish music is included if the user clicks the audio button.
+* This button toggles on or off, depending on the current state of the audio.
+* This audio adds to the theming of St. Patrick's Day.
 ---
 
 ## Technologies Used
@@ -120,8 +129,6 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 #### Bootstrap 5.0.0:
 [Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
-#### jQuery:
-[jQuery](https://jquery.com/) was used to help create the JavaScript functions.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
@@ -173,13 +180,15 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
+The errors brought up by the W3C HTML Validator are due to the fact that we have a FontAwesome icon in front of our header, causing it to read the code as without a heading in that section. 
+The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
 1. W3C Markup Validator
-    * [HTML Results](LINK)
+    * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
@@ -221,7 +230,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 * On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 ### Full Testing
-[Click here](testing.md) to view the full testing steps that were completed on every device and browser.
+[Click here](assets/docs/testing.md) to view the full testing steps that were completed on every device and browser.
 
 #### Desktop / Laptop
 1. Google Chrome
@@ -231,9 +240,6 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * All tested and working correctly.
 
 3. Mozilla Firefox
-    * All tested and working correctly.
-
-4. Internet Explorer
     * All tested and working correctly.
 
 5. Safari
@@ -254,26 +260,18 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * All tested and working correctly.
 
 ### Further Testing
-The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
+The website was tested on Google Chrome, Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
-* Custom built desktop PC, running Windows 10
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-* MacBookAir7,2 (13-inch, 2017)
-* iPad 6,11 5th generation, running iOS 10.3
-* Amazon Fire tablet 7
-* iPhone 7
-* iPhone X
-* iPhone 12
 * OPPO Find X2 Lite
 * Samsung Galaxy A70
 * Samsung Galaxy S9
-* Samsung Galaxy S10+
 * Samsung A20
 * xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
-Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+Friends and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
 1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
@@ -284,11 +282,10 @@ Friends, family members, and other developers were asked to review the site and 
     * We took it out of that container, to give us more control over our footer.
     * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
 
-2. The background image wasn't responsive below 1300px.
-    * We hadn't used no-repeat, fixed on our background, so we added that in.
-    * That unfortunately removed our background completely.
-    * We tried writing background-repeat: no-repeat on a seperate line, which stopped our background repeating.
-    * We then added background-size: cover, but that didn't fix our problem.
+2. None of our margins were working as expected.
+    * We checked the parent properties of all elements to find out which one was giving us margin issues.
+    * We discovered that our Bootstrap classes were adding strange margins on to our code.
+    * We set the pages class to be 100vw and 100vh, which gave us the full screen to use.
 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
@@ -302,6 +299,27 @@ Friends, family members, and other developers were asked to review the site and 
     * We double checked our code, and realised we hadn't included the pages class to all page sections.
     * We added that class, and fixed this bug.
 
+5. The audio wasn't playing when the audio button was clicked.
+    * We checked the pathways to the audio file, but all was correct.
+    * We read through each line of our audio functions, and corrected 'audio' to 'irishAudio'.
+    * This still didn't solve the issue, so we checked inside the HTML.
+    * We'd called 'ToggleMusicFunction' instead of 'ToggleMusic', which we corrected to fix this bug.
+
+6. The 'Next Card' button was positioned behind the card.
+    * We put the button element inside a div with .col-12 to position it underneath the image.
+    * This put the button on top of the image.
+    * We looked at Google DevTools, and saw that the button was inside a section that wasn't the full size of the viewport.
+    * We gave that section height of 100vh.
+    * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
+    * We then also decided we didn't want a 'Next Card' button, so removed it.
+
+7. The clicking on the card wasn't giving us a new card.
+    * We were just using cardPopulate function, which didn't flip the card to the card background.
+    * We created a new function nextFlip, which called flipCard and cardPopulate functions.
+    * This gave us a lot of console errors.
+    * We then looked at how the function was being called, and realised we needed a setTimeout.
+    * We set this to delay the flip and populate functions, which solved our bug.
+
 ### Known Bugs
 * None found
 
@@ -309,22 +327,26 @@ Friends, family members, and other developers were asked to review the site and 
 We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/docs/lighthouse.png)
+![Lighthouse desktop](assets/docs/lighthousedesktop.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/docs/lighthousemobile.png)
+![Lighthouse mobile](assets/docs/lighthousemobile.png)
 
 #### Performance:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We used images that were sized correctly as much as possible.
+* We used the most recent version of Bootstrap.
+* The only thing we lost score for here was some unused CSS on the mobile site (which is used on the desktop site).
 
 #### Accessibility:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We ensured all images had alt text attached.
+* We made sure all colors had sufficient color contrast to not cause issues for any colorblind users.
+* We made sure all fonts were large enough to not cause issues for anyone with impaired sight.
 
 #### Best Practices:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* All best practices were followed to our best abilities.
 
 #### SEO:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* Meta description and keywords were included for best SEO practice.
 
 ---
 ## Credits
@@ -344,7 +366,9 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.
 * All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
+* The audio found is from YouTube at [this link](https://www.youtube.com/watch?v=rutmRjpN_Yk).
 
 ### Acknowledgements
 * Special thanks to Miklos, our mentor from Code Institute.
 * Thanks to Conor Nye for editing some images.
+* Many thanks to all our friends and family for supporting us through our coding journey.

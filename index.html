@@ -13,31 +13,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 
 <body class="background-image">
     <section id="js-intro-page" class="pages">
         <div class="container-fluid">
-            <section>
+            <main>
                 <div class="row card pt-5 text-center">
-                    <div class="col-12 title">
+                    <header class="col-12 title">
                         <i class="fas fa-beer d-none d-sm-block px-2 py-3 fa-lg"></i>
                         <h1 class="px-2">Lucky Irishman</h1>
-                    </div>
+                    </header>
                     <div class="col-12 py-2">
                         <button class="btn btn-lg" type="button" id="agree" onclick="navigation(id)">Let's start
-                            drinking !</button>
+                            drinking!</button>
                     </div>
                 </div>
-            </section>
+            </main>
         </div>
     </section>
     <section id="js-agree-page" class="hide pages">
         <!-- Agreement page + rules -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 card agree-card mx-2">
+            <div class="row agree-row">
+                <div class="col-12 card agree-card">
                     <h3 class="card-title py-3 text-center">Rules and Regulations</h3>
                     <ul>
                         <li>
@@ -59,13 +60,38 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center py-5">
+        <div class="container-fluid text-center py-3">
             <button type="button" id="home" onclick="navigation(id)" class="btn btn-sm">Back</button>
             <button type="button" id="card" onclick="navigation(id)" class="btn btn-sm">Agree</button>
         </div>
     </section>
     <section id="js-card-page" class="hide pages">
         <!-- Cards page -->
+        <div class="cards-container">
+            <!-- =================================================================================== Overlay start / game / over -->
+            <div class="card-page">
+                <h1 class="game-title">Lucky Irishman</h1>
+                <div class="container-fluid text-center">
+                    <button class="audio-button btn" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i></button>
+                    <button class="audio-button btn" id="g-home" onclick="navigation(id)">Back to Home</button>
+                </div>
+            </div>
+            <!-- =========================================================================================== Game Container -->
+            <div class="game-container container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-flip" id="card-flip">
+                            <div class="card-back card-face" id="card-back">
+                                <img src="assets/images/cards/card-background.jpg" alt="background image" class="game-card">
+                            </div>
+                            <div class="card-front card-face" id="card-front">
+                                <img class="card-value game-card" src="#" id="card-box" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="container-fluid fixed-bottom">
         <div class="row text-center">
@@ -87,7 +113,7 @@
             </div>
             <div class="col-12 col-md-3">
                 <h2>Drink responsibly</h2>
-                <a target="_blank" rel="noopener" class="btn" href="https://www.drinkaware.co.uk"><i
+                <a target="_blank" rel="noopener" class="btn btn-sm" href="https://www.drinkaware.co.uk"><i
                         class="fas fa-hand-holding-medical"></i>Ask for Help</a>
             </div>
             <div class="col-12 col-md-3">
@@ -96,7 +122,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" async></script>
 </body>
 
 </html>

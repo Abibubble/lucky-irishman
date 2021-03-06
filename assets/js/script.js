@@ -58,7 +58,7 @@ class LuckyIrishman {
          }, 500);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
-        this.cardPopulate()
+        this.cardPopulate();
     }
 
     hideCards() {

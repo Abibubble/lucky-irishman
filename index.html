@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 
@@ -36,8 +44,8 @@
     <section id="js-agree-page" class="hide pages">
         <!-- Agreement page + rules -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 card agree-card mx-2">
+            <div class="row agree-row">
+                <div class="col-12 card agree-card">
                     <h3 class="card-title py-3 text-center">Rules and Regulations</h3>
                     <ul>
                         <li>
@@ -70,39 +78,27 @@
             <!-- =================================================================================== Overlay start / game / over -->
             <div class="card-page">
                 <h1 class="game-title">Lucky Irishman</h1>
-                <div class="game-info-container text-center">
-                    <div class="game-info">
-                        Time: <span id="time-remaining">100</span>
-                    </div>
+                <div class="container-fluid text-center">
+                    <button class="audio-button btn" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i></button>
+                    <button class="audio-button btn" id="g-home" onclick="navigation(id)">Back to Home</button>
                 </div>
-                <button class="audio-button" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i><br>Audio on</button>
             </div>
-            <div class="overlay-text visible">
-                Start Game
-            </div>
-            <div id="game-over-text" class="overlay-text">
-                Game Over
-                <button class="restart-game overlay-text-small buttons">Restart Game</button>
-                <button type="button" id="a-home" onclick="navigation(id)" class="btn btn-sm">Back</button>
-            </div>
-
             <!-- =========================================================================================== Game Container -->
             <div class="game-container container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
+                    <div class="col-12 card-template">
+                        <div class="card-flip" id="card-flip">
+                            <div class="card-back card-face" id="card-back">
+                                <img src="assets/images/cards/card-background.jpg" alt="background image" class="game-card">
                             </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="#" id="card-box" alt="#">
+                            <div class="card-front card-face" id="card-front">
+                                <img class="card-value game-card" src="#" id="card-box" alt="#">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <button class="btn btn-lg next-btn" type="button" onclick="nextFlip()">Next</button>
     </section>
     <footer class="container-fluid fixed-bottom">
         <div class="row text-center">
@@ -133,7 +129,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" async></script>
 </body>
 
 </html>

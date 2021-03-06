@@ -66,6 +66,43 @@
     </section>
     <section id="js-card-page" class="hide pages">
         <!-- Cards page -->
+        <article class="container">
+            <!-- =================================================================================== Overlay start / game / over -->
+            <div class="card-page">
+                <h1 class="game-title">Lucky Irishman</h1>
+                <div class="game-info-container text-center">
+                    <div class="game-info">
+                        Time: <span id="time-remaining">100</span>
+                    </div>
+                </div>
+                <button class="audio-button" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i><br>Audio on</button>
+            </div>
+            <div class="overlay-text visible">
+                Start Game
+            </div>
+            <div id="game-over-text" class="overlay-text">
+                Game Over
+                <button class="restart-game overlay-text-small buttons">Restart Game</button>
+                <button type="button" id="a-home" onclick="navigation(id)" class="btn btn-sm">Back</button>
+            </div>
+
+            <!-- =========================================================================================== Game Container -->
+            <div class="game-container container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-flip">
+                            <div class="card-back card-face">
+                                <img src="assets/images/cards/card-background.jpg" alt="background image">
+                            </div>
+                            <div class="card-front card-face">
+                                <img class="card-value" src="#" id="card-box" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <button class="btn btn-lg next-btn" type="button" onclick="nextFlip()">Next</button>
     </section>
     <footer class="container-fluid fixed-bottom">
         <div class="row text-center">

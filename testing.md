@@ -11,6 +11,12 @@ The following steps were completed on each browser and device to ensure function
 ## Cards
 * Click on the card to flip the card and reveal a new challenge.
 
+## Audio
+* On the game page, the audio turns on if you click the 'Audio on' button.
+* On the game page, the text changes to 'Audio off' if you click the 'Audio on' button.
+* On the game page, the audio turns off if you click the 'Audio off' button.
+* On the game page, the text changes to 'Audio on' if you click the 'Audio off' button.
+
 ## Browser buttons
 ### Browser back button
 * Click the browser's back button on the home page and ensure it doesn't break anything.

@@ -261,24 +261,16 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
-* Custom built desktop PC, running Windows 10
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-* MacBookAir7,2 (13-inch, 2017)
-* iPad 6,11 5th generation, running iOS 10.3
-* Amazon Fire tablet 7
-* iPhone 7
-* iPhone X
-* iPhone 12
 * OPPO Find X2 Lite
 * Samsung Galaxy A70
 * Samsung Galaxy S9
-* Samsung Galaxy S10+
 * Samsung A20
 * xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
-Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+Friends and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
 1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
@@ -318,6 +310,7 @@ Friends, family members, and other developers were asked to review the site and 
     * We looked at Google DevTools, and saw that the button was inside a section that wasn't the full size of the viewport.
     * We gave that section height of 100vh.
     * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
+    * We then also decided we didn't want a 'Next Card' button, so removed it.
 
 7. The clicking on the card wasn't giving us a new card.
     * We were just using cardPopulate function, which didn't flip the card to the card background.

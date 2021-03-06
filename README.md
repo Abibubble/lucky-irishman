@@ -27,6 +27,7 @@ This was built as part of Code Institute's March 2021 Hackathon, with the theme 
     * [Imagery](#imagery)
     * [Wireframes](#wireframes)
     * [Features](#features)
+    * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -98,9 +99,15 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### Features
 * A flipping card that rotates to show the next drinking challenge.
-* A link to connect you to emergency help.
+* A link to connect you to Drink Aware.
 * A reminder to drink responsibly on every page.
 * An age requirement.
+* Audio toggle on / off.
+
+### Audio
+* An audio file of Irish music is included if the user clicks the audio button.
+* This button toggles on or off, depending on the current state of the audio.
+* This audio adds to the theming of St. Patrick's Day.
 ---
 
 ## Technologies Used
@@ -120,8 +127,6 @@ Git was used for version control by utilizing the Gitpod terminal to add and com
 [Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 #### Bootstrap 5.0.0:
 [Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
-#### jQuery:
-[jQuery](https://jquery.com/) was used to help create the JavaScript functions.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
@@ -302,8 +307,28 @@ Friends, family members, and other developers were asked to review the site and 
     * We double checked our code, and realised we hadn't included the pages class to all page sections.
     * We added that class, and fixed this bug.
 
+5. The audio wasn't playing when the audio button was clicked.
+    * We checked the pathways to the audio file, but all was correct.
+    * We read through each line of our audio functions, and corrected 'audio' to 'irishAudio'.
+    * This still didn't solve the issue, so we checked inside the HTML.
+    * We'd called 'ToggleMusicFunction' instead of 'ToggleMusic', which we corrected to fix this bug.
+
+6. The 'Next Card' button was positioned behind the card.
+    * We put the button element inside a div with .col-12 to position it underneath the image.
+    * This put the button on top of the image.
+    * We looked at Google DevTools, and saw that the button was inside a section that wasn't the full size of the viewport.
+    * We gave that section height of 100vh.
+    * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
+
+7. The 'Next Card' button wasn't giving us a new card.
+    * We were just using cardPopulate function, which didn't flip the card to the card background.
+    * We created a new function nextFlip, which called flipCard and cardPopulate functions.
+    * Both of these 
+
 ### Known Bugs
-* None found
+1. The 'Rules and Regulations' box has no margin-right on mobile screen sizes.
+    * We tried using margin-right and padding-right.
+    * We tried looking at the responsive sizing of the box, but we couldn't find anything causing the styling issue.
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:

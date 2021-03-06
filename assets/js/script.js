@@ -139,18 +139,6 @@ function toggleMusic() { // So that the user can toggle the music off or on
     playMusic();
 }
 
-// function changeCards() {
-//     let cards = Array.from(document.getElementsByClassName("card-flip"));
-//     this.busy = true;
-//     setTimeout(() => {
-//         game.hideCards();
-//         game.cardPopulate(card);
-//         game.flipCard(card);
-//     }, 2000);
-//     this.busy = false;
-// }
-
-
 // -------------------------------------------------------------------------------------------------readyState function
 
 if (document.readyState == "loading") { // When doc is loading, wait till it's ready

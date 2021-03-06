@@ -68,20 +68,21 @@
         <!-- Cards page -->
         <article class="container">
             <!-- =================================================================================== Overlay start / game / over -->
-            <h1 class="game-title">Lucky Irishman</h1>
+            <div class="card-page">
+                <h1 class="game-title">Lucky Irishman</h1>
+                <div class="game-info-container text-center">
+                    <div class="game-info">
+                        Time: <span id="time-remaining">100</span>
+                    </div>
+                </div>
+            </div>
             <div class="overlay-text visible">
                 Start Game
             </div>
             <div id="game-over-text" class="overlay-text">
                 Game Over
                 <button class="restart-game overlay-text-small buttons">Restart Game</button>
-                <button type="button" id="home" onclick="navigation(id)" class="btn btn-sm">Back</button>
-            </div>
-            <div class="game-info-container">
-
-                <div class="game-info">
-                    Time: <span id="time-remaining">100</span>
-                </div>
+                <button type="button" id="a-home" onclick="navigation(id)" class="btn btn-sm">Back</button>
             </div>
 
             <!-- =========================================================================================== Game Container -->
@@ -93,184 +94,7 @@
                                 <img src="assets/images/cards/card-background.jpg" alt="background image">
                             </div>
                             <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card1.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card2.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                        
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card3.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card4.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card4.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card4.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card5.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card6.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card7.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card8.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card9.png" alt="drinkdrink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card10.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card11.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card12.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card13.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card14.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card15.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card16.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card17.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card18.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card19.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card20.png" alt="drink image">
-                            </div>
-                        </div>
-                        <div class="card-flip">
-                            <div class="card-back card-face">
-                                <img src="assets/images/cards/card-background.jpg" alt="background image">
-                            </div>
-                            <div class="card-front card-face">
-                                <img class="card-value" src="assets/images/cards/card21.png" alt="drink image">
+                                <img class="card-value" id="card-box" alt="drink image">
                             </div>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ function navigation(id) {
     }
     switch (id) {
         case "home":
+        case "a-home":
             introPage.classList.remove("hide");
             break;
         case "agree":
@@ -57,18 +58,17 @@ class LuckyIrishman {
          }, 500);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
+        this.cardPopulate()
     }
 
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove("visible");
-            card.classList.remove("matched");
         });
     }
 
     flipCard(card) {
         if(this.canFlipCard(card)) {
-            this.totalClicks++;
             card.classList.add("visible");
         }
     }
@@ -102,6 +102,13 @@ class LuckyIrishman {
 
     canFlipCard(card) {
         return !this.busy  && card !== this.cardToCheck;
+    }
+
+    cardPopulate() {
+        let randomNumber = Math.ceil(Math.random() * 21); // Gets a random number between 1 and 21
+        let cardBox = document.getElementById("card-box");
+        cardBox.src = `assets/images/cards/card${randomNumber}.png`;
+        cardBox.alt = "An image related to the drinking game";
     }
 }
 

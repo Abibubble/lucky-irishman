@@ -110,6 +110,17 @@ footer a:hover {
     display: none;
 }
 
+/* -----------------------------------------------------------------------------Game page styling */
+
+.card-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 /* ----------------------------------------------------------------------------Flip cards ---- */
 
 
@@ -118,6 +129,11 @@ footer a:hover {
     height: 250px;
     width: 400px;
    
+}
+
+.card-flip img {
+    width: 100%;
+    height: 100%;
 }
 
 .card-face {
@@ -130,6 +146,7 @@ footer a:hover {
     align-items: center;
     transition: transform 500ms ease-in-out;
 }
+
 
 .card-flip.visible .card-back {
     transform: rotateY(-180deg);
@@ -145,15 +162,9 @@ footer a:hover {
 
 
 .game-title {
-    color: #fff;
     font-weight: bold;
     text-align: center;
     font-size: 2em;
-    background-color: #000000;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 /* ------------------------------------------------------------------------------ overlays ------ */

@@ -58,7 +58,7 @@ class LuckyIrishman {
          }, 500);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
-        this.cardPopulate()
+        this.cardPopulate();
     }
 
     hideCards() {
@@ -107,10 +107,38 @@ class LuckyIrishman {
     cardPopulate() {
         let randomNumber = Math.ceil(Math.random() * 21); // Gets a random number between 1 and 21
         let cardBox = document.getElementById("card-box");
-        cardBox.src = `assets/images/cards/card${randomNumber}.png`;
+        cardBox.src = `assets/images/cards/card${randomNumber}.jpg`;
         cardBox.alt = "An image related to the drinking game";
     }
 }
+
+let music = "off";
+const irishAudio = new Audio('assets/audio/audio.mp3');
+irishAudio.loop = true;
+function playMusic() { // Decide whether to play music
+    if (music === "on") {
+        irishAudio.play();
+    } else {
+        irishAudio.pause();
+    }
+}
+function checkAudioButtons() {
+    if (music === "on") {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
+    } else {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+    }
+}
+function toggleMusic() { // So that the user can toggle the music off or on
+    if (music === "off") {
+        music = "on";
+    } else {
+        music = "off";
+    }
+    checkAudioButtons();
+    playMusic();
+}
+
 
 // -------------------------------------------------------------------------------------------------readyState function
 

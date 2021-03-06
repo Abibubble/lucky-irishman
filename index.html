@@ -70,21 +70,11 @@
             <!-- =================================================================================== Overlay start / game / over -->
             <div class="card-page">
                 <h1 class="game-title">Lucky Irishman</h1>
-                <div class="game-info-container text-center">
-                    <div class="game-info">
-                        Time: <span id="time-remaining">100</span>
-                    </div>
-                </div>
-                <button class="audio-button" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i><br>Audio on</button>
+                <button class="audio-button" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i></button>
                 <button class="audio-button" id="g-home" onclick="navigation(id)">Back to Home</button>
             </div>
             <div class="overlay-text visible">
                 Start Game
-            </div>
-            <div id="game-over-text" class="overlay-text">
-                Game Over
-                <button class="restart-game overlay-text-small buttons">Restart Game</button>
-                <button type="button" id="a-home" onclick="navigation(id)" class="btn btn-sm">Back</button>
             </div>
 
             <!-- =========================================================================================== Game Container -->

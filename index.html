@@ -36,8 +36,8 @@
     <section id="js-agree-page" class="hide pages">
         <!-- Agreement page + rules -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 card agree-card mx-2">
+            <div class="row agree-row">
+                <div class="col-12 card agree-card">
                     <h3 class="card-title py-3 text-center">Rules and Regulations</h3>
                     <ul>
                         <li>
@@ -70,13 +70,11 @@
             <!-- =================================================================================== Overlay start / game / over -->
             <div class="card-page">
                 <h1 class="game-title">Lucky Irishman</h1>
-                <button class="audio-button" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i></button>
-                <button class="audio-button" id="g-home" onclick="navigation(id)">Back to Home</button>
+                <div class="container-fluid text-center">
+                    <button class="audio-button btn" id="audio" onclick="toggleMusic()"><i class="fas fa-volume-up"></i></button>
+                    <button class="audio-button btn" id="g-home" onclick="navigation(id)">Back to Home</button>
+                </div>
             </div>
-            <div class="overlay-text visible">
-                Start Game
-            </div>
-
             <!-- =========================================================================================== Game Container -->
             <div class="game-container container-fluid">
                 <div class="row">

@@ -3,10 +3,16 @@
 const introPage = document.getElementById("js-intro-page");
 const agreePage = document.getElementById("js-agree-page");
 const cardPage = document.getElementById("js-card-page");
+let music = "off"; // Set music to off to begind with, so no music auto-plays
+const irishAudio = new Audio('assets/audio/audio.mp3'); // Import audio file
 
 // -------------------------------------------------------------------- Navigation function
 
 function navigation(id) {
+    if (music = "on") {
+        music = "off";
+    };
+    playMusic();
     var pages = document.getElementsByClassName("pages");
     for (var i = 0; i < pages.length; i++) { // Adds hide to all pages
         pages[i].classList.add("hide");
@@ -44,20 +50,10 @@ copyrightYear();
 class LuckyIrishman {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
-        this.totalTime = totalTime;
-        this.timeRemaining = totalTime;
-        this.timer = document.getElementById("time-remaining");
     }
 
     startGame() { // Starts the timer, hides cards, populates a random card
-        this.timeRemaining = this.totalTime;
-        this.busy = true;
-        setTimeout(() => {
-            this.countdown = this.startCountdown();
-            this.busy = false;
-        }, 500);
         this.hideCards();
-        this.timer.innerText = this.timeRemaining;
         this.cardPopulate();
     }
 
@@ -72,21 +68,6 @@ class LuckyIrishman {
             card.classList.add("visible");
             card.classList.remove("card-front");
         }
-    }
-
-    startCountdown() { // Starts the timer function
-        return setInterval(() => {
-            this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
-            if (this.timeRemaining === 0)
-                this.gameOver();
-        }, 1000);
-    }
-
-    gameOver() { // Clears timer, shows game over overlay, hides all cards
-        clearInterval(this.countdown);
-        document.getElementById("game-over-text").classList.add("visible");
-        this.hideCards();
     }
 
     canFlipCard() { // Allows card to flip when it's not already flipping
@@ -107,10 +88,6 @@ class LuckyIrishman {
 
 // -------------------------------------------------------------------- Audio functions
 
-let music = "off"; // Set music to off to begind with, so no music auto-plays
-
-const irishAudio = new Audio('assets/audio/audio.mp3'); // Import audio file
-
 irishAudio.loop = true; // Loop the audio for however long they play
 
 function playMusic() { // Decide whether to play music
@@ -123,9 +100,9 @@ function playMusic() { // Decide whether to play music
 
 function checkAudioButtons() { // Change the text of the audio button once clicked
     if (music === "on") {
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`;
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i>`;
     } else {
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`;
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i>`;
     }
 }
 

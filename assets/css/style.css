@@ -125,10 +125,17 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     margin: auto;
-    width: 120%;
+    width: 100%;
     height: auto;
     margin-top: 20px;
     padding: 5px;
+    justify-self: center;
+}
+
+.cards-container {
+    width: 70%;
+    height: auto;
+    margin: auto;
     justify-content: center;
 }
 

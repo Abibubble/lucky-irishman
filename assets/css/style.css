@@ -1,0 +1,291 @@
+body {
+    font-family: 'Architects Daughter', cursive;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.background-image {
+    background: url("../images/background.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+/* ----------------------------------------------------------------------------- cards ----*/
+
+.card {
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 80rem;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    justify-items: center;
+    color: #fff;
+}
+
+.card i {
+    font-size: 7rem;
+    vertical-align: middle;
+    color: yellowgreen;
+}
+
+.card .title {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.agree-card {
+    height: auto;
+}
+
+.agree-row {
+    height: auto;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.card p {
+    font-size: 2rem;
+}
+
+.card h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------------- buttons ---- */
+
+.btn {
+    background-color: black;
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: chartreuse;
+}
+
+/* ------------------------------------------------------------------------- footer ---- */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer div {
+    padding-top: 0.5rem;
+    align-self: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+footer .btn {
+    font-size: 1rem;
+    background-color: rgb(1, 87, 1);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a:hover {
+    color: yellowgreen;
+}
+
+.hide {
+    display: none;
+}
+
+/* -----------------------------------------------------------------------------Game page styling */
+
+.card-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 5px;
+    justify-self: center;
+}
+
+.cards-container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+
+
+/* ----------------------------------------------------------------------------Flip cards ---- */
+
+
+.card-flip {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    backface-visibility: hidden;
+    align-items: center;
+    transition: transform 500ms ease-in-out;
+}
+
+.card-flip.visible .card-back { /* Facing backwards */
+    transform: rotateY(-180deg);
+}
+
+.card-flip.visible .card-front { /* Facing forwards */
+    transform: rotateY(0);
+}
+
+.card-front { /* Facing backwards */
+    transform: rotateY(180deg);
+}
+
+.game-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+}
+
+.pages {
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-card {
+    border-radius: 10%;
+}
+
+/* ------------------------------------------------------------------------------ overlays ------ */
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: rgb(202, 223, 247);
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+.overlay-text-small {
+    font-size: .3em;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 6em;
+    }
+}
+
+
+/* --------------------------------------------------------------------------- Media Queries ---- */
+
+@media (max-width: 991.98px) {
+    .card {
+        width: fit-content;
+        margin-top: 100px;
+    }
+    
+    .card h1 {
+        font-size: 2.5rem;
+        padding-top: 15px;
+    }
+
+    .btn {
+        padding-top: 5px;
+    }
+
+    .agree-card p {
+        font-size: 1rem;
+    }
+
+    .agree-card h3 {
+        font-size: 2rem;
+    }
+
+    .agree-card {
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    .card-flip img {
+        width: 140%;
+        height: auto;
+    }
+
+    .card-page {
+        font-size: 1rem;
+    }
+
+    .card-page button {
+        font-size: 1rem;
+    }
+
+    .card-flip {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width:  576px) {
+    .agree-row {
+        width: 100%;
+        margin: 1px;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+    }
+
+    footer .btn {
+        font-size: 1rem;
+    }
+    
+}

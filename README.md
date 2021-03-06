@@ -1,19 +1,19 @@
-# Title
+# Lucky Irishman
 
-![GitHub contributors](https://img.shields.io/github/contributors/shamrocked/REPO)
-![GitHub last commit](https://img.shields.io/github/last-commit/shamrocked/REPO)
-![GitHub language count](https://img.shields.io/github/languages/count/shamrocked/REPO)
-![GitHub top language](https://img.shields.io/github/languages/top/shamrocked/REPO)
+![GitHub contributors](https://img.shields.io/github/contributors/shamrocked/lucky-irishman)
+![GitHub last commit](https://img.shields.io/github/last-commit/shamrocked/lucky-irishman)
+![GitHub language count](https://img.shields.io/github/languages/count/shamrocked/lucky-irishman)
+![GitHub top language](https://img.shields.io/github/languages/top/shamrocked/lucky-irishman)
 ![Font Awesome version](https://img.shields.io/badge/Font%20Awesome-v5.15.1-blue)
-![GitHub forks](https://img.shields.io/github/forks/shamrocked/REPO?style=social)
+![GitHub forks](https://img.shields.io/github/forks/shamrocked/lucky-irishman?style=social)
 
-[Here is a link to the final project](https://shamrocked.github.io/REPO)
+[Here is a link to the final project](https://shamrocked.github.io/lucky-irishman)
 
-BASIC DESCRIPTION OF PROJECT
+This is a drinking game site designed for people to be able to celebrate St. Patrick's Day together whilst apart.
 It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
-WHY DID WE CHOOSE THIS PROJECT
+This was built as part of Code Institute's March 2021 Hackathon, with the theme of 'Hacking St. Patrick's Day'.
 
-![Final project image home page](assets/images/finalpage.png)
+![Final project image home page](assets/docs/finalpage.png)
 
 ## Contents
 
@@ -25,7 +25,7 @@ WHY DID WE CHOOSE THIS PROJECT
     * [Color Scheme](#color-scheme)
     * [Typography](#typography)
     * [Imagery](#imagery)
-    * [Wireframes](assets/docs/hackathon.pdf)
+    * [Wireframes](#wireframes)
     * [Features](#features)
     * [Audio](#audio)
 
@@ -61,40 +61,55 @@ WHY DID WE CHOOSE THIS PROJECT
 ---
 ## User Experience (UX)
 ### Initial Discussion
-WHAT WE WANTED FROM THIS PROJECT
+We wanted this project to be an easy way for people to celebrate St. Patrick's Day together, whilst kept apart due to Coronavirus. It is designed to be playable over video 
+conferencing, so people can still have drinks together and celebrate St. Patrick's Day whilst staying safe.
 
 ### User Stories
 #### Client Goals
-* WHAT THE CLIENT WANTS, NOT THE USER
+* For a user to be able to play a drinking game with friends or family.
+* For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
 
 #### First Time Visitor Goals
-* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
+* To be able to play a drinking game with a friend via video conferencing.
+* Easy to navigate around the site.
+* Clear and simple to understand instructions.
 
 #### Returning Visitor Goals
-* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
+* To be able to replay the game, and not have the same game experience.
+* To be able to easily access medical advice if the situation required.
 
 #### Frequent Visitor Goals
-* WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
+* To be able to replay the game, and not have the same game experience.
+* To be able to easily access medical advice if the situation required.
 
 ---
 ## Design
 ### Color Scheme
-* WHAT COLORS USED AND WHY
+* The colors used were shades of green, yellow and black, to link with the St. Patrick's Day theme.
 
 ### Typography
-* WHAT FONT AND WHY
+* The font 'Architect's Daughter' was used, as it's a relaxed font, which links with the theme of drinking.
+* The font was imported from Google Fonts, so it should function at all times that Google is functioning.
 
 ### Imagery
-* WHAT IMAGES ARE USED AND WHY
+* All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
+* The favicon is included to tie the site to the theme from the moment they load the page.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
 
 ### Features
-* WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
+* A flipping card that rotates to show the next drinking challenge.
+* A link to connect you to Drink Aware.
+* A reminder to drink responsibly on every page.
+* An age requirement.
+* Audio toggle on / off.
+* A favicon to add to the theme of the site.
 
 ### Audio
-* WHAT AUDIO IS USED (IF ANY) AND WHY.
+* An audio file of Irish music is included if the user clicks the audio button.
+* This button toggles on or off, depending on the current state of the audio.
+* This audio adds to the theming of St. Patrick's Day.
 ---
 
 ## Technologies Used
@@ -104,14 +119,16 @@ WHAT WE WANTED FROM THIS PROJECT
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks Libraries and Programs Used
-#### Font Awesome:
-[Font Awesome](https://fontawesome.com/) was used on all pages to add the instructions, home, settings and copyright icons.
+#### Font Awesome 5.7.2:
+[Font Awesome](https://fontawesome.com/) was used on all pages to add the beer and copyright icons.
 #### Git:
 Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
 #### GitHub:
-GitHub is used to store the code for this project after being pushed from Git.
+[GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 #### Balsamiq:
-Balsamiq was used to create the wireframes during the design process.
+[Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
+#### Bootstrap 5.0.0:
+[Bootstrap](https://getbootstrap.com/) was used to help with responsive styling.
 #### Responsinator:
 [Responsinator](http://www.responsinator.com/) was used to help improve the responsive design on a variety of devices.
 #### Google DevTools:
@@ -121,13 +138,11 @@ Google DevTools was used to help me find what code correlated to what feature.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
 
-BOOTSTRAP, JASMINE TESTING, JQUERY, ETC. USED?
-
 ## Deployment
 ### Initial Deployment
 This site was deployed to GitHub Pages by following these steps:
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Create a new repository named "REPO".
+2. Create a new repository named "lucky-irishman".
 3. Once created, click on "Settings" on the navigation bar under the repository title.
 4. Scroll down to "GitHub Pages".
 5. Under "Source", choose which branch to deploy. We chose "master", but this is sometimes shown as "main".
@@ -137,12 +152,12 @@ This site was deployed to GitHub Pages by following these steps:
 
 ### How to Fork it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. On GitHub, go to [shamrocked/REPO](https://github.com/shamrocked/REPO).
+2. On GitHub, go to [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman).
 3. In the top right, click "Fork".
 
 ### How to Clone it
 1. Login or Sign Up to [GitHub](www.github.com).
-2. Fork the repository shamrocked/REPO using the steps above in [How to Fork it](#how-to-fork-it).
+2. Fork the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) using the steps above in [How to Fork it](#how-to-fork-it).
 3. Above the file list, click "Code".
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
@@ -151,7 +166,7 @@ This site was deployed to GitHub Pages by following these steps:
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
-1. Log in to [GitHub](www.github.com) and locate the [Repository](https://github.com/shamrocked/REPO) for this resume.
+1. Log in to [GitHub](www.github.com) and locate the repository [shamrocked/lucky-irishman](https://github.com/shamrocked/lucky-irishman) for this site.
 2. Under the repository name, above the list of files, click "Code".
 3. Here you can either Clone or Download the repository.
 4. You should clone the repository using HTTPS, clicking on the icon to copy the link.
@@ -165,13 +180,15 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
+The errors brought up by the W3C HTML Validator are due to the fact that we have a FontAwesome icon in front of our header, causing it to read the code as without a heading in that section. 
+The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
 1. W3C Markup Validator
-    * [HTML Results](LINK)
+    * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
@@ -179,118 +196,179 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 ### Testing User Stories
 #### Client Goals
-##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+##### For a user to be able to play a drinking game with friends or family.
+* This site can be played on screen sharing over video conferencing, or with friends and family in person.
+
+##### For a user to feel like they're celebrating St. Patrick's Day whilst Coronavirus restrictions are in place.
+* The entire site is themed to St. Patrick's Day.
+* The game is able to be played over video conferencing, so people can still play together, whilst not being physically together.
 
 #### First Time Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+##### To be able to play a drinking game with a friend via video conferencing.
+* This game is easy to play over video conferencing using a screen share function.
+
+##### Easy to navigate around the site.
+* All buttons and links throughout the site area clear to understand where they take you.
+* All buttons and links are easily visible as buttons or links by the use of CSS hover.
+
+##### Clear and simple to understand instructions.
+* The instructions are laid out in the center of the page after you click the first button to get the game started.
+* There is also an age restriction warning to instruct those under the legal drinking age not to play.
 
 #### Returning Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* All cards are presented in a randomised order, so the game won't be the same each time.
+
+##### To be able to easily access medical advice if the situation required.
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 #### Frequent Visitor Goals
-##### GOAL
-* HOW THE SITE COMPLETEES EACH GOAL
+##### To be able to replay the game, and not have the same game experience.
+* All cards are presented in a randomised order, so the game won't be the same each time.
+
+##### To be able to easily access medical advice if the situation required.
+* On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 ### Full Testing
-[Click here](testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
+[Click here](assets/docs/testing.md) to view the full testing steps that were completed on every device and browser.
 
 #### Desktop / Laptop
 1. Google Chrome
     * All tested and working correctly.
 
 2. Microsoft Edge
-    * 
+    * All tested and working correctly.
 
 3. Mozilla Firefox
-    * 
-
-4. Internet Explorer
-    * 
+    * All tested and working correctly.
 
 5. Safari
-    * 
+    * All tested and working correctly.
 
 #### Tablet
 1. Safari
-    * 
+    * All tested and working correctly.
 
 #### Mobile
 1. Google Chrome
-    * 
+    * All tested and working correctly.
 
 2. Safari
-    * 
+    * All tested and working correctly.
 
 3. Samsung Internet
-    * 
+    * All tested and working correctly.
 
 ### Further Testing
-The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
+The website was tested on Google Chrome, Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
-* Custom built desktop PC, running Windows 10
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-* MacBookAir7,2 (13-inch, 2017)
-* iPad 6,11 5th generation, running iOS 10.3
-* Amazon Fire tablet 7
-* iPhone 7
-* iPhone X
-* iPhone 12
 * OPPO Find X2 Lite
 * Samsung Galaxy A70
 * Samsung Galaxy S9
-* Samsung Galaxy S10+
 * Samsung A20
 * xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
-Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+Friends and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. WHAT THE BUG IS
-    * WHAT STEPS WE TOOK TO FIX IT
+1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
+    * We checked our modified styling, to ensure that none of those had affected the Bootstrap classes we are using.
+    * We checked the version of Bootstrap that we were using was the correct version for the features we wanted.
+    * We checked function of the Bootstrap classes we were using.
+    * We discovered our footer was not taking up the required width, due to it being located inside another container-fluid div.
+    * We took it out of that container, to give us more control over our footer.
+    * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
+
+2. None of our margins were working as expected.
+    * We checked the parent properties of all elements to find out which one was giving us margin issues.
+    * We discovered that our Bootstrap classes were adding strange margins on to our code.
+    * We set the pages class to be 100vw and 100vh, which gave us the full screen to use.
+
+3. Our footer was too big on mobile devices.
+    * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
+    * This removed all of the text from our site.
+    * We realised we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
+    * We then used media queries to correct the last little bits of styling.
+
+4. The navigation function wasn't working on the 'Let's get drinking' button.
+    * We checked if we needed this.id in our onclick function.
+    * We found that we only needed id, so changed that, but the function still wasn't working.
+    * We double checked our code, and realised we hadn't included the pages class to all page sections.
+    * We added that class, and fixed this bug.
+
+5. The audio wasn't playing when the audio button was clicked.
+    * We checked the pathways to the audio file, but all was correct.
+    * We read through each line of our audio functions, and corrected 'audio' to 'irishAudio'.
+    * This still didn't solve the issue, so we checked inside the HTML.
+    * We'd called 'ToggleMusicFunction' instead of 'ToggleMusic', which we corrected to fix this bug.
+
+6. The 'Next Card' button was positioned behind the card.
+    * We put the button element inside a div with .col-12 to position it underneath the image.
+    * This put the button on top of the image.
+    * We looked at Google DevTools, and saw that the button was inside a section that wasn't the full size of the viewport.
+    * We gave that section height of 100vh.
+    * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
+    * We then also decided we didn't want a 'Next Card' button, so removed it.
+
+7. The clicking on the card wasn't giving us a new card.
+    * We were just using cardPopulate function, which didn't flip the card to the card background.
+    * We created a new function nextFlip, which called flipCard and cardPopulate functions.
+    * This gave us a lot of console errors.
+    * We then looked at how the function was being called, and realised we needed a setTimeout.
+    * We set this to delay the flip and populate functions, which solved our bug.
 
 ### Known Bugs
-* ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
+* None found
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/images/lighthouse.png)
+![Lighthouse desktop](assets/docs/lighthousedesktop.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/images/lighthousemobile.png)
+![Lighthouse mobile](assets/docs/lighthousemobile.png)
 
 #### Performance:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We used images that were sized correctly as much as possible.
+* We used the most recent version of Bootstrap.
+* The only thing we lost score for here was some unused CSS on the mobile site (which is used on the desktop site).
 
 #### Accessibility:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We ensured all images had alt text attached.
+* We made sure all colors had sufficient color contrast to not cause issues for any colorblind users.
+* We made sure all fonts were large enough to not cause issues for anyone with impaired sight.
 
 #### Best Practices:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* All best practices were followed to our best abilities.
 
 #### SEO:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* Meta description and keywords were included for best SEO practice.
 
 ---
 ## Credits
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
-* ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
-
-### Audio
-* WHO OWNS THE AUDIO AND WHO EDITED THE AUDIO
+* [Bootstrap](https://getbootstrap.com/): Library of CSS classes to help with responsive styling.
 
 ### Content
-* WHO OWNS THE CONTENT OF THE SITE
+* All code was written and edited by team Shamrocked from [Code Institute](https://codeinstitute.net/):
+    * [Abi Harrison](https://github.com/Abibubble)
+    * [Kiran Kumari Satyarthy](https://github.com/Kiran6248)
+    * [Mihaela Sandrea](https://github.com/mihaelasandrea)
+    * [Toby Mankinde](https://github.com/ogunmakindetobi)
+    * [Katja Schatte](https://github.com/katjacodes)
+    * [Reza Nazarian](https://github.com/RNazarian1)
 
 ### Media
-* WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
+* All images were found on [Pexels](https://www.pexels.com/), all copyright free.
+* All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
+* The audio found is from YouTube at [this link](https://www.youtube.com/watch?v=rutmRjpN_Yk).
 
 ### Acknowledgements
-* WHO WE WANT TO THANK
+* Special thanks to Miklos, our mentor from Code Institute.
+* Thanks to Conor Nye for editing some images.
+* Many thanks to all our friends and family for supporting us through our coding journey.

@@ -93,6 +93,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 
 ### Imagery
 * All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
+* The favicon is included to tie the site to the theme from the moment they load the page.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
@@ -103,6 +104,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * A reminder to drink responsibly on every page.
 * An age requirement.
 * Audio toggle on / off.
+* A favicon to add to the theme of the site.
 
 ### Audio
 * An audio file of Irish music is included if the user clicks the audio button.
@@ -178,13 +180,14 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
+The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
 1. W3C Markup Validator
     * [HTML Results](LINK)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
@@ -226,7 +229,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 * On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 ### Full Testing
-[Click here](testing.md) to view the full testing steps that were completed on every device and browser.
+[Click here](assets/docs/testing.md) to view the full testing steps that were completed on every device and browser.
 
 #### Desktop / Laptop
 1. Google Chrome
@@ -236,9 +239,6 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * All tested and working correctly.
 
 3. Mozilla Firefox
-    * All tested and working correctly.
-
-4. Internet Explorer
     * All tested and working correctly.
 
 5. Safari
@@ -259,7 +259,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * All tested and working correctly.
 
 ### Further Testing
-The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
+The website was tested on Google Chrome, Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
@@ -326,22 +326,26 @@ Friends and other developers were asked to review the site and documentation to 
 We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop
-![Lighthouse desktop first try](assets/docs/lighthouse.png)
+![Lighthouse desktop](assets/docs/lighthousedesktop.png)
 
 #### Mobile
-![Lighthouse mobile first try](assets/docs/lighthousemobile.png)
+![Lighthouse mobile](assets/docs/lighthousemobile.png)
 
 #### Performance:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We used images that were sized correctly as much as possible.
+* We used the most recent version of Bootstrap.
+* The only thing we lost score for here was some unused CSS on the mobile site (which is used on the desktop site).
 
 #### Accessibility:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We ensured all images had alt text attached.
+* We made sure all colors had sufficient color contrast to not cause issues for any colorblind users.
+* We made sure all fonts were large enough to not cause issues for anyone with impaired sight.
 
 #### Best Practices:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* All best practices were followed to our best abilities.
 
 #### SEO:
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* Meta description and keywords were included for best SEO practice.
 
 ---
 ## Credits
@@ -361,7 +365,9 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.
 * All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
+* The audio found is from YouTube at [this link](https://www.youtube.com/watch?v=rutmRjpN_Yk).
 
 ### Acknowledgements
 * Special thanks to Miklos, our mentor from Code Institute.
 * Thanks to Conor Nye for editing some images.
+* Many thanks to all our friends and family for supporting us through our coding journey.

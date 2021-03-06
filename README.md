@@ -289,11 +289,10 @@ Friends, family members, and other developers were asked to review the site and 
     * We took it out of that container, to give us more control over our footer.
     * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
 
-2. The background image wasn't responsive below 1300px.
-    * We hadn't used no-repeat, fixed on our background, so we added that in.
-    * That unfortunately removed our background completely.
-    * We tried writing background-repeat: no-repeat on a seperate line, which stopped our background repeating.
-    * We then added background-size: cover, but that didn't fix our problem.
+2. None of our margins were working as expected.
+    * We checked the parent properties of all elements to find out which one was giving us margin issues.
+    * We discovered that our Bootstrap classes were adding strange margins on to our code.
+    * We set the pages class to be 100vw and 100vh, which gave us the full screen to use.
 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
@@ -320,15 +319,15 @@ Friends, family members, and other developers were asked to review the site and 
     * We gave that section height of 100vh.
     * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
 
-7. The 'Next Card' button wasn't giving us a new card.
+7. The clicking on the card wasn't giving us a new card.
     * We were just using cardPopulate function, which didn't flip the card to the card background.
     * We created a new function nextFlip, which called flipCard and cardPopulate functions.
-    * Both of these 
+    * This gave us a lot of console errors.
+    * We then looked at how the function was being called, and realised we needed a setTimeout.
+    * We set this to delay the flip and populate functions, which solved our bug.
 
 ### Known Bugs
-1. The 'Rules and Regulations' box has no margin-right on mobile screen sizes.
-    * We tried using margin-right and padding-right.
-    * We tried looking at the responsive sizing of the box, but we couldn't find anything causing the styling issue.
+* None found
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:

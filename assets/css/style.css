@@ -17,6 +17,12 @@ body {
     position: relative;
 }
 
+h1 {
+    font-size: 100px;
+}
+
+/* ----------------------------------------------------------------------------- cards ----*/
+
 .card {
     margin: 0 auto;
     margin-top: 300px;
@@ -50,6 +56,9 @@ body {
     font-weight: bold;
 }
 
+
+/* ------------------------------------------------------------------------- buttons ---- */
+
 .btn {
     background-color: black;
     color: #fff;
@@ -60,9 +69,7 @@ body {
     background-color: chartreuse;
 }
 
-h1 {
-    font-size: 100px;
-}
+/* ------------------------------------------------------------------------- footer ---- */
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -103,6 +110,90 @@ footer a:hover {
     display: none;
 }
 
+/* ----------------------------------------------------------------------------Flip cards ---- */
+
+
+.card-flip {
+    position: relative;
+    height: 250px;
+    width: 400px;
+   
+}
+
+.card-face {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    backface-visibility: hidden;
+    align-items: center;
+    transition: transform 500ms ease-in-out;
+}
+
+.card-flip.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card-flip.visible .card-front {
+    transform: rotateY(0);
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
+
+
+.game-title {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    background-color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* ------------------------------------------------------------------------------ overlays ------ */
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: rgb(202, 223, 247);
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+
+.overlay-text-small {
+    font-size: .3em;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 6em;
+    }
+}
+
+
+/* --------------------------------------------------------------------------- Media Queries ---- */
 
 @media (max-width: 991.98px) {
     .card {

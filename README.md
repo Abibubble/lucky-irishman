@@ -181,10 +181,11 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 ## Testing
 ### W3C Validator
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
+The errors brought up by the W3C HTML Validator are due to the fact that we have a FontAwesome icon in front of our header, causing it to read the code as without a heading in that section. 
 The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
 1. W3C Markup Validator
-    * [HTML Results](LINK)
+    * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F)
 
 2. W3C CSS Validator
     * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)

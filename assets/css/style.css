@@ -144,15 +144,15 @@ footer a:hover {
     transition: transform 500ms ease-in-out;
 }
 
-.card-flip.visible .card-back {
+.card-flip.visible .card-back { /* Facing backwards */
     transform: rotateY(-180deg);
 }
 
-.card-flip.visible .card-front {
+.card-flip.visible .card-front { /* Facing forwards */
     transform: rotateY(0);
 }
 
-.card-front {
+.card-front { /* Facing backwards */
     transform: rotateY(180deg);
 }
 

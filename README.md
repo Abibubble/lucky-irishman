@@ -261,24 +261,16 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 ### Further Testing
 The website was tested on Google Chrome, Firefox, Internet Explorer, Microsoft Edge, Safari and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
-* Custom built desktop PC, running Windows 10
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
-* MacBookAir7,2 (13-inch, 2017)
-* iPad 6,11 5th generation, running iOS 10.3
-* Amazon Fire tablet 7
-* iPhone 7
-* iPhone X
-* iPhone 12
 * OPPO Find X2 Lite
 * Samsung Galaxy A70
 * Samsung Galaxy S9
-* Samsung Galaxy S10+
 * Samsung A20
 * xBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
-Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
+Friends and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
 1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
@@ -289,11 +281,10 @@ Friends, family members, and other developers were asked to review the site and 
     * We took it out of that container, to give us more control over our footer.
     * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
 
-2. The background image wasn't responsive below 1300px.
-    * We hadn't used no-repeat, fixed on our background, so we added that in.
-    * That unfortunately removed our background completely.
-    * We tried writing background-repeat: no-repeat on a seperate line, which stopped our background repeating.
-    * We then added background-size: cover, but that didn't fix our problem.
+2. None of our margins were working as expected.
+    * We checked the parent properties of all elements to find out which one was giving us margin issues.
+    * We discovered that our Bootstrap classes were adding strange margins on to our code.
+    * We set the pages class to be 100vw and 100vh, which gave us the full screen to use.
 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
@@ -319,16 +310,17 @@ Friends, family members, and other developers were asked to review the site and 
     * We looked at Google DevTools, and saw that the button was inside a section that wasn't the full size of the viewport.
     * We gave that section height of 100vh.
     * We then set the button to position: fixed and set it to the place we wanted, which solved our bug.
+    * We then also decided we didn't want a 'Next Card' button, so removed it.
 
-7. The 'Next Card' button wasn't giving us a new card.
+7. The clicking on the card wasn't giving us a new card.
     * We were just using cardPopulate function, which didn't flip the card to the card background.
     * We created a new function nextFlip, which called flipCard and cardPopulate functions.
-    * Both of these 
+    * This gave us a lot of console errors.
+    * We then looked at how the function was being called, and realised we needed a setTimeout.
+    * We set this to delay the flip and populate functions, which solved our bug.
 
 ### Known Bugs
-1. The 'Rules and Regulations' box has no margin-right on mobile screen sizes.
-    * We tried using margin-right and padding-right.
-    * We tried looking at the responsive sizing of the box, but we couldn't find anything causing the styling issue.
+* None found
 
 ### Lighthouse
 We tested our website using DevTools Lighthouse feature, and got these results:

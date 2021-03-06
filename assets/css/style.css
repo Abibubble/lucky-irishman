@@ -139,6 +139,8 @@ footer a:hover {
     justify-content: center;
 }
 
+
+
 /* ----------------------------------------------------------------------------Flip cards ---- */
 
 
@@ -146,7 +148,7 @@ footer a:hover {
     position: relative;
     height: auto;
     width: 100%;
-    padding-top: 8rem;
+    padding-top: 10%;
 }
 
 .card-face {
@@ -238,7 +240,7 @@ footer a:hover {
     }
 
     .btn {
-        padding-top: 15px;
+        padding-top: 5px;
     }
 
     .agree-card p {
@@ -251,7 +253,39 @@ footer a:hover {
 
     .agree-card {
         width: 70%;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
+    .card-flip img {
+        width: 140%;
+        height: auto;
+    }
+
+    .card-page {
+        font-size: 1rem;
+    }
+
+    .card-page button {
+        font-size: 1rem;
+    }
+
+    .card-flip {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width:  576px) {
+    .agree-row {
+        width: 100%;
+        margin: 1px;
+    }
+
+    footer h2 {
+        font-size: 1rem;
+    }
+
+    footer .btn {
+        font-size: 1rem;
+    }
+    
 }

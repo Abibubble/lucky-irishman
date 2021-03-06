@@ -52,7 +52,6 @@ class LuckyIrishman {
         this.timeRemaining = this.totalTime;
         this.busy = true;
         setTimeout(() => {
-            this.shuffleCards(this.cardsArray);
             this.countdown = this.startCountdown();
             this.busy = false;
          }, 500);
@@ -92,25 +91,53 @@ class LuckyIrishman {
         this.hideCards();
     }
 
-    shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * (i+1));
-            this.cardsArray[randIndex].style.order = i;
-            this.cardsArray[i].style.order = randIndex;
-        }
-    }
-
-    canFlipCard(card) {
-        return !this.busy  && card !== this.cardToCheck;
+    canFlipCard() {
+        return !this.busy;
     }
 
     cardPopulate() {
         let randomNumber = Math.ceil(Math.random() * 21); // Gets a random number between 1 and 21
         let cardBox = document.getElementById("card-box");
-        cardBox.src = `assets/images/cards/card${randomNumber}.png`;
+        cardBox.src = `assets/images/cards/card${randomNumber}.jpg`;
         cardBox.alt = "An image related to the drinking game";
     }
+
+    nextFlip() {
+        this.flipCard && this.cardPopulate;
+    }
+
 }
+
+
+
+
+let music = "off";
+const irishAudio = new Audio('assets/audio/audio.mp3');
+irishAudio.loop = true;
+function playMusic() { // Decide whether to play music
+    if (music === "on") {
+        irishAudio.play();
+    } else {
+        irishAudio.pause();
+    }
+}
+function checkAudioButtons() {
+    if (music === "on") {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
+    } else {
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+    }
+}
+function toggleMusic() { // So that the user can toggle the music off or on
+    if (music === "off") {
+        music = "on";
+    } else {
+        music = "off";
+    }
+    checkAudioButtons();
+    playMusic();
+}
+
 
 // -------------------------------------------------------------------------------------------------readyState function
 

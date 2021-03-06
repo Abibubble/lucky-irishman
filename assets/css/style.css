@@ -126,20 +126,15 @@ footer a:hover {
 
 .card-flip {
     position: relative;
-    height: 250px;
-    width: 400px;
-   
-}
-
-.card-flip img {
+    height: auto;
     width: 100%;
-    height: 100%;
+    padding-top: 8rem;
 }
 
 .card-face {
     position: absolute;
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     backface-visibility: hidden;
@@ -165,6 +160,16 @@ footer a:hover {
     font-weight: bold;
     text-align: center;
     font-size: 2em;
+}
+
+.pages {
+    height: 100vh;
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 16%;
+    left: 50%;
 }
 
 /* ------------------------------------------------------------------------------ overlays ------ */
@@ -233,4 +238,5 @@ footer a:hover {
         width: fit-content;
         margin-top: 100px;
     }
+
 }

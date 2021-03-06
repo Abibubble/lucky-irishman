@@ -4,7 +4,7 @@ const introPage = document.getElementById("js-intro-page");
 const agreePage = document.getElementById("js-agree-page");
 const cardPage = document.getElementById("js-card-page");
 
-// -------------------------------------------------------------------- Navigation functions
+// -------------------------------------------------------------------- Navigation function
 
 function navigation(id) {
     var pages = document.getElementsByClassName("pages");
@@ -14,6 +14,7 @@ function navigation(id) {
     switch (id) {
         case "home":
         case "a-home":
+        case "g-home":
             introPage.classList.remove("hide");
             break;
         case "agree":
@@ -31,14 +32,14 @@ function navigation(id) {
 // -------------------------------------------------------------------- Copyright
 
 function copyrightYear() {
-   var d = new Date();
-   var y = d.getFullYear();
-   document.getElementById("copyright").innerHTML = y;
+    var d = new Date();
+    var y = d.getFullYear();
+    document.getElementById("copyright").innerHTML = y;
 }
 
 copyrightYear();
 
-// --------------------------------------------------------------------- flip cards
+// --------------------------------------------------------------------- Flip cards
 
 class LuckyIrishman {
     constructor(totalTime, cards) {
@@ -54,7 +55,7 @@ class LuckyIrishman {
         setTimeout(() => {
             this.countdown = this.startCountdown();
             this.busy = false;
-         }, 500);
+        }, 500);
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.cardPopulate();
@@ -67,7 +68,7 @@ class LuckyIrishman {
     }
 
     flipCard(card) {
-        if(this.canFlipCard(card)) {
+        if (this.canFlipCard(card)) {
             card.classList.add("visible");
         }
     }
@@ -80,8 +81,8 @@ class LuckyIrishman {
         return setInterval(() => {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
-            this.gameOver();
+            if (this.timeRemaining === 0)
+                this.gameOver();
         }, 1000);
     }
 
@@ -101,19 +102,38 @@ class LuckyIrishman {
         cardBox.src = `assets/images/cards/card${randomNumber}.jpg`;
         cardBox.alt = "An image related to the drinking game";
     }
-
-    nextFlip() {
-        this.flipCard && this.cardPopulate;
-    }
-
 }
 
+function cardPopulate() {
+    let randomNumber = Math.ceil(Math.random() * 21); // Gets a random number between 1 and 21
+    let cardBox = document.getElementById("card-box");
+    cardBox.src = `assets/images/cards/card${randomNumber}.jpg`;
+    cardBox.alt = "An image related to the drinking game";
+}
 
+function nextFlip() {
+    let cardBack = document.getElementById("card-back");
+    let cardFront = document.getElementById("card-front");
+    cardPopulate();
+    if (cardBack.classList.contains("visible")) {
+        ready();
+        cardBack.classList.remove("visible");
+        cardFront.classList.add("visible");
+    } else {
+        ready();
+        cardFront.classList.remove("visible");
+        cardBack.classList.add("visible");
+    }
+}
 
+// -------------------------------------------------------------------- Audio functions
 
-let music = "off";
-const irishAudio = new Audio('assets/audio/audio.mp3');
-irishAudio.loop = true;
+let music = "off"; // Set music to off to begind with, so no music auto-plays
+
+const irishAudio = new Audio('assets/audio/audio.mp3'); // Import audio file
+
+irishAudio.loop = true; // Loop the audio for however long they play
+
 function playMusic() { // Decide whether to play music
     if (music === "on") {
         irishAudio.play();
@@ -121,13 +141,15 @@ function playMusic() { // Decide whether to play music
         irishAudio.pause();
     }
 }
-function checkAudioButtons() {
+
+function checkAudioButtons() { // Change the text of the audio button once clicked
     if (music === "on") {
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`; // Changes the text of the button once clicked
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-mute"></i><br>Audio off`;
     } else {
-        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`; // Changes the text of the button once clicked
+        document.getElementById("audio").innerHTML = `<i class="fas fa-volume-up"></i><br>Audio on`;
     }
 }
+
 function toggleMusic() { // So that the user can toggle the music off or on
     if (music === "off") {
         music = "on";
@@ -141,13 +163,13 @@ function toggleMusic() { // So that the user can toggle the music off or on
 
 // -------------------------------------------------------------------------------------------------readyState function
 
-if(document.readyState == "loading") {
+if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
     ready();
 }
 
-function ready(){
+function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card-flip"));
     let game = new LuckyIrishman(120, cards);

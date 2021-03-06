@@ -33,11 +33,13 @@ h1 {
     justify-items: center;
     color: #fff;
 }
+
 .card i {
     font-size: 7rem;
     vertical-align: middle;
     color: yellowgreen;
 }
+
 .card .title {
     display: inline-flex;
     justify-content: center;
@@ -142,7 +144,6 @@ footer a:hover {
     transition: transform 500ms ease-in-out;
 }
 
-
 .card-flip.visible .card-back {
     transform: rotateY(-180deg);
 }
@@ -155,7 +156,6 @@ footer a:hover {
     transform: rotateY(180deg);
 }
 
-
 .game-title {
     font-weight: bold;
     text-align: center;
@@ -166,10 +166,8 @@ footer a:hover {
     height: 100vh;
 }
 
-.next-btn {
-    position: fixed;
-    bottom: 16%;
-    left: 50%;
+.game-card {
+    border-radius: 10%;
 }
 
 /* ------------------------------------------------------------------------------ overlays ------ */

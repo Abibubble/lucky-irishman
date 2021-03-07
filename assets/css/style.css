@@ -77,6 +77,10 @@ h1 {
             justify-content: center;
 }
 
+.intro-card {
+    width: 80%;
+}
+
 .agree-card {
     height: auto;
 }

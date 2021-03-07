@@ -108,7 +108,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * A favicon to add to the theme of the site.
 
 ### Audio
-* An audio file of Irish music is included if the user clicks the audio button.
+* An audio file of Irish music is included if the user clicks the audio icon button.
 * This button toggles on or off, depending on the current state of the audio.
 * This audio adds to the theming of St. Patrick's Day.
 ---
@@ -138,6 +138,8 @@ Google DevTools was used to help me find what code correlated to what feature.
 [Am I Responsive Design](http://ami.responsivedesign.is/#) was used to check the responsive design of the quiz.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
+#### Autoprefixer CSS online
+[Autoprefixer CSS online](https://autoprefixer.github.io/) was used to ensure all prefixes for browers were included correctly.
 
 ## Deployment
 ### Initial Deployment
@@ -189,10 +191,17 @@ The errors brought up by W3C CSS Validator were all related to Bootstrap.
     * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F)
 
 2. W3C CSS Validator
-    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+      </p>
+          
 
 3. JSHint
-    * [JSHint](https://jshint.com/)
+    * [JSHint](https://jshint.com/) 
 
 
 ### Testing User Stories
@@ -354,6 +363,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 ### Code
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * [Bootstrap](https://getbootstrap.com/): Library of CSS classes to help with responsive styling.
+* [Autoprefixer CSS online](https://autoprefixer.github.io/): To aid in the CSS prefixing.
 
 ### Content
 * All code was written and edited by team Shamrocked from [Code Institute](https://codeinstitute.net/):
@@ -366,10 +376,11 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 ### Media
 * All images were found on [Pexels](https://www.pexels.com/), all copyright free.
+* [PizResize](https://picresize.com/) was used to size the images.
 * All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
 * The audio found is from YouTube at [this link](https://www.youtube.com/watch?v=rutmRjpN_Yk).
 
 ### Acknowledgements
-* Special thanks to Miklos, our mentor from Code Institute.
+* Special thanks to Miklos Sarosi, our mentor from Code Institute.
 * Thanks to Conor Nye for editing some images.
 * Many thanks to all our friends and family for supporting us through our coding journey.

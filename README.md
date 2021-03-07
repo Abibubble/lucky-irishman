@@ -13,7 +13,7 @@ This is a drinking game site designed for people to be able to celebrate St. Pat
 It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through. 
 This was built as part of Code Institute's March 2021 Hackathon, with the theme of 'Hacking St. Patrick's Day'.
 
-![Final project image home page](assets/docs/finalpage.png)
+![Final project image home page](assets/docs/li-site.png)
 
 ## Contents
 

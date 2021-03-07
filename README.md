@@ -189,10 +189,17 @@ The errors brought up by W3C CSS Validator were all related to Bootstrap.
     * [HTML Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F)
 
 2. W3C CSS Validator
-    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fshamrocked.github.io%2Flucky-irishman%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    * <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+      </p>
+          
 
 3. JSHint
-    * [JSHint](https://jshint.com/)
+    * [JSHint](https://jshint.com/) 
 
 
 ### Testing User Stories

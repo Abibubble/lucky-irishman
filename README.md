@@ -92,12 +92,12 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 * The font was imported from Google Fonts, so it should function at all times that Google is functioning.
 
 ### Imagery
-* All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
+* All images used relate to either shamrock, lucky clovers, St. Patrick's Day, or the theme of the cards.
 * The favicon is included to tie the site to the theme from the moment they load the page.
 * The site, 'Lucky Irishman', is named after a well-known Irish cocktail, adding more links to St. Patrick's Day, which is often celebrated with drinking Irish-themed drinks.
 
 ### Wireframes
-[Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).
+[Here are the wireframes for desktop, mobile, and tablet for this project](assets/docs/hackathon.pdf).
 
 ### Features
 * A flipping card that rotates to show the next drinking challenge.
@@ -139,7 +139,7 @@ Google DevTools was used to help me find what code correlated to what feature.
 #### Shields.io:
 [Shields.io](https://shields.io/) was used to create the GitHub badges for this README.md file.
 #### Autoprefixer CSS online
-[Autoprefixer CSS online](https://autoprefixer.github.io/) was used to ensure all prefixes for browers were included correctly.
+[Autoprefixer CSS online](https://autoprefixer.github.io/) was used to ensure all prefixes for browsers were included correctly.
 
 ## Deployment
 ### Initial Deployment
@@ -165,7 +165,7 @@ This site was deployed to GitHub Pages by following these steps:
 4. Choose if you want to clone using HTTPS, SSH, or GitHub CLI, then click the copy button to the right.
 5. Open Git Bash.
 6. Change the directory to where you want your clone to go.
-7. Type gitclone and then paste the URL you copied in step 4.
+7. Type git clone and then paste the URL you copied in step 4.
 8. Press Enter to create your clone.
 
 ### Making a Local Clone
@@ -176,14 +176,14 @@ This site was deployed to GitHub Pages by following these steps:
 5. Open Git Bash.
 6. Change the current working directory to the new location, where you want the cloned directory to be.
 6. Type git clone, and then paste the URL that was copied in Step 4.
-7. Press Enter, and your local clone will be created.
+7. Press Enter and your local clone will be created.
 
 For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
 
 ---
 ## Testing
 ### W3C Validator
-The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
+The W3C Markup Validator, W3C CSS Validator, and JSHint were used to validate the project to ensure there were no syntax errors within the site. 
 The errors brought up by the W3C HTML Validator are due to the fact that we have a FontAwesome icon in front of our header, causing it to read the code as without a heading in that section. 
 The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
@@ -227,14 +227,14 @@ The errors brought up by W3C CSS Validator were all related to Bootstrap.
 
 #### Returning Visitor Goals
 ##### To be able to replay the game, and not have the same game experience.
-* All cards are presented in a randomised order, so the game won't be the same each time.
+* All cards are presented in a randomized order, so the game won't be the same each time.
 
 ##### To be able to easily access medical advice if the situation required.
 * On the bottom of every page, in the footer, there is a link to emergency numbers.
 
 #### Frequent Visitor Goals
 ##### To be able to replay the game, and not have the same game experience.
-* All cards are presented in a randomised order, so the game won't be the same each time.
+* All cards are presented in a randomized order, so the game won't be the same each time.
 
 ##### To be able to easily access medical advice if the situation required.
 * On the bottom of every page, in the footer, there is a link to emergency numbers.
@@ -270,7 +270,7 @@ The errors brought up by W3C CSS Validator were all related to Bootstrap.
     * All tested and working correctly.
 
 ### Further Testing
-The website was tested on Google Chrome, Firefox, Microsoft Edge, Safari and Samsung Internet browsers.
+The website was tested on Google Chrome, Firefox, Microsoft Edge, Safari, and Samsung Internet browsers.
 The website was viewed on a variety of devices, including:
 * Acer Aspire V Nitro Laptop, running Windows 10
 * Lenovo B51 IntelCore i7 Laptop, running Ubuntu 16.04 LTS
@@ -278,36 +278,36 @@ The website was viewed on a variety of devices, including:
 * Samsung Galaxy A70
 * Samsung Galaxy S9
 * Samsung A20
-* xBox One
+* XBox One
 
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the quiz played out as it should.
 Friends and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
 ### Solved Bugs
-1. Introduction page responsive design in y-axis wasn't working below 1300px viewportwidth.
+1. Introduction page responsive design in y-axis wasn't working below 1300px viewport width.
     * We checked our modified styling, to ensure that none of those had affected the Bootstrap classes we are using.
     * We checked the version of Bootstrap that we were using was the correct version for the features we wanted.
-    * We checked function of the Bootstrap classes we were using.
+    * We checked the function of the Bootstrap classes we were using.
     * We discovered our footer was not taking up the required width, due to it being located inside another container-fluid div.
     * We took it out of that container, to give us more control over our footer.
     * We discovered a display: flex in our body styling, which was messing with our footer styles, so we removed it.
 
 2. None of our margins were working as expected.
     * We checked the parent properties of all elements to find out which one was giving us margin issues.
-    * We discovered that our Bootstrap classes were adding strange margins on to our code.
+    * We discovered that our Bootstrap classes were adding strange margins to our code.
     * We set the pages class to be 100vw and 100vh, which gave us the full screen to use.
 
 3. Our footer was too big on mobile devices.
     * We set our names column in the footer to hide on small screen sizes using sm-none Bootstrap class.
     * This removed all of the text from our site.
-    * We realised we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
+    * We realized we needed to show the names column from medium screen size and above, so added the correct Bootstrap classes.
     * We then used media queries to correct the last little bits of styling.
 
 4. The navigation function wasn't working on the 'Let's get drinking' button.
     * We checked if we needed this.id in our onclick function.
     * We found that we only needed id, so changed that, but the function still wasn't working.
-    * We double checked our code, and realised we hadn't included the pages class to all page sections.
-    * We added that class, and fixed this bug.
+    * We double-checked our code and realised we hadn't included the pages class in all page sections.
+    * We added that class and fixed this bug.
 
 5. The audio wasn't playing when the audio button was clicked.
     * We checked the pathways to the audio file, but all was correct.
@@ -325,16 +325,16 @@ Friends and other developers were asked to review the site and documentation to 
 
 7. The clicking on the card wasn't giving us a new card.
     * We were just using cardPopulate function, which didn't flip the card to the card background.
-    * We created a new function nextFlip, which called flipCard and cardPopulate functions.
+    * We created a new function nextFlip, which is called flipCard and cardPopulate functions.
     * This gave us a lot of console errors.
-    * We then looked at how the function was being called, and realised we needed a setTimeout.
+    * We then looked at how the function was being called and realised we needed a setTimeout.
     * We set this to delay the flip and populate functions, which solved our bug.
 
 ### Known Bugs
 * None found
 
 ### Lighthouse
-We tested our website using DevTools Lighthouse feature, and got these results:
+We tested our website using the DevTools Lighthouse feature, and got these results:
 
 #### Desktop
 ![Lighthouse desktop](assets/docs/lighthousedesktop.png)
@@ -345,7 +345,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 #### Performance:
 * We used images that were sized correctly as much as possible.
 * We used the most recent version of Bootstrap.
-* The only thing we lost score for here was some unused CSS on the mobile site (which is used on the desktop site).
+* The only thing we lost the score for here was some unused CSS on the mobile site (which is used on the desktop site).
 
 #### Accessibility:
 * We ensured all images had alt text attached.
@@ -375,12 +375,12 @@ We tested our website using DevTools Lighthouse feature, and got these results:
     * [Reza Nazarian](https://github.com/RNazarian1)
 
 ### Media
-* All images were found on [Pexels](https://www.pexels.com/), all copyright free.
-* [PizResize](https://picresize.com/) was used to size the images.
+* All images were found on [Pexels](https://www.pexels.com/), all copyright-free.
+* [PizResize](https://picresize.com/) has been used to size the images.
 * All images were edited by [Abi Harrison](https://github.com/Abibubble) and Conor Nye.
 * The audio found is from YouTube at [this link](https://www.youtube.com/watch?v=rutmRjpN_Yk).
 
-### Acknowledgements
+### Acknowledgments
 * Special thanks to Miklos Sarosi, our mentor from Code Institute.
 * Thanks to Conor Nye for editing some images.
 * Many thanks to all our friends and family for supporting us through our coding journey.

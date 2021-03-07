@@ -1,19 +1,47 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 body {
     font-family: 'Architects Daughter', cursive;
     overflow-x: hidden;
     font-size: 16px;
+    width: 100%;
+    height: 100%;
 }
 
 .background-image {
     background: url("../images/background.jpg") no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -41,8 +69,12 @@ h1 {
 }
 
 .card .title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .agree-card {
@@ -52,7 +84,9 @@ h1 {
 .agree-row {
     height: auto;
     width: 70%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
 }
 
@@ -89,7 +123,9 @@ footer {
 
 footer div {
     padding-top: 0.5rem;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 footer a {
@@ -125,18 +161,21 @@ footer a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     margin: auto;
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-top: 20px;
     padding: 5px;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 
 .cards-container {
     width: 70%;
     height: auto;
     margin: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -155,29 +194,43 @@ footer a:hover {
     position: absolute;
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    backface-visibility: hidden;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: -webkit-transform 500ms ease-in-out;
+    -o-transition: transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .card-flip.visible .card-back { /* Facing backwards */
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
 
 .card-flip.visible .card-front { /* Facing forwards */
-    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
 }
 
 .card-front { /* Facing backwards */
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .game-title {
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 .pages {
@@ -198,20 +251,41 @@ footer a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 100;
     color: rgb(202, 223, 247);
 }
 
 .overlay-text.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    animation: overlay-grow 500ms forwards;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-animation: overlay-grow 500ms forwards;
+            animation: overlay-grow 500ms forwards;
 }
 
 .overlay-text-small {
     font-size: .3em;
+}
+
+@-webkit-keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 6em;
+    }
 }
 
 @keyframes overlay-grow {
@@ -230,6 +304,8 @@ footer a:hover {
 
 @media (max-width: 991.98px) {
     .card {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         margin-top: 100px;
     }
@@ -263,6 +339,7 @@ footer a:hover {
 
     .card-page {
         font-size: 1rem;
+        width: 100%;
     }
 
     .card-page button {
@@ -270,8 +347,13 @@ footer a:hover {
     }
 
     .card-flip {
-        padding-top: 20%;
+        padding-top: 30%;
     }
+
+    .game-title {
+        font-size: 2rem;
+    }
+
 }
 
 @media (max-width:  576px) {

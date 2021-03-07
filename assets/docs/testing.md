@@ -9,13 +9,14 @@ The following steps were completed on each browser and device to ensure function
 * Click 'back' button on card page to return to instructions page.
 
 ## Cards
+* Click on the start overlay to start the game.
 * Click on the card to flip the card and reveal a new challenge.
 
 ## Audio
 * On the game page, the audio turns on if you click the 'Audio on' button.
-* On the game page, the text changes to 'Audio off' if you click the 'Audio on' button.
+* On the game page, the Font Awesome icon changes to the audio off if you click the audio on icon button.
 * On the game page, the audio turns off if you click the 'Audio off' button.
-* On the game page, the text changes to 'Audio on' if you click the 'Audio off' button.
+* On the game page, the Font Awesome icon changes to the audio ofn if you click the audio off icon button.
 
 ## Browser buttons
 ### Browser back button
@@ -35,6 +36,7 @@ The following steps were completed on each browser and device to ensure function
 * Click Mihaela Sandrea link to go to Mihaela's GitHub.
 * Click Toby Mankinde link to go to Toby's GitHub.
 * Click Katja Schatte link to go to Katja's GitHub.
+* Click Reza Nazarian link to go to Reza's GitHub.
 
 ### Ask for Help button
 * Click 'Ask For Help' button on home page to take you to an emergency number page.

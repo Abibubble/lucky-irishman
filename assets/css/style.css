@@ -393,3 +393,16 @@ footer a:hover {
         padding-bottom: 5%;
     }
 }
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+    .card {
+        margin-top: 3%;
+    }
+
+    .card-face {
+        width: 70%;
+        padding-bottom: 20%;
+        margin-left: 15%;
+    }
+
+}

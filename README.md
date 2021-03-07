@@ -94,6 +94,7 @@ conferencing, so people can still have drinks together and celebrate St. Patrick
 ### Imagery
 * All images used relate to either shamrocks, lucky clovers, St. Patrick's Day, or the theme of the cards.
 * The favicon is included to tie the site to the theme from the moment they load the page.
+* The site, 'Lucky Irishman', is named after a well-known Irish cocktail, adding more links to St. Patrick's Day, which is often celebrated with drinking Irish-themed drinks.
 
 ### Wireframes
 [Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/hackathon.pdf).

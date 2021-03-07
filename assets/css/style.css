@@ -126,7 +126,6 @@ footer {
 }
 
 footer div {
-    padding-top: 0.5rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -181,8 +180,6 @@ footer a:hover {
         -ms-flex-pack: center;
             justify-content: center;
 }
-
-
 
 /* ----------------------------------------------------------------------------Flip cards ---- */
 
@@ -244,6 +241,10 @@ footer a:hover {
 
 .game-card {
     border-radius: 10%;
+}
+
+.copyright {
+    margin-bottom: 0;
 }
 
 /* ------------------------------------------------------------------------------ overlays ------ */
